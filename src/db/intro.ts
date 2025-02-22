@@ -4,7 +4,7 @@ export const PAGES_HOME = {
       title: "Web Development Course",
       subTitle: "HTML, CSS & JavaScript Course",
       lema: "Learn web development from scratch and build your own website.",
-      ctaButton: "Enroll Now",
+      ctaButton: "Contact",
       firstBlock: {
         title: "Course details",
         items: [
@@ -75,7 +75,7 @@ export const PAGES_HOME = {
       title: "Curso de Desarrollo Web",
       subTitle: "Curso de HTML, CSS y JavaScript",
       lema: "Aprende desarrollo web desde cero y crea tu propia página.",
-      ctaButton: "Inscribirse ahora",
+      ctaButton: "Contacto",
       firstBlock: {
         title: "Detalles del curso",
         items: [
@@ -146,7 +146,7 @@ export const PAGES_HOME = {
       title: "Curs de Desenvolupament Web",
       subTitle: "Curs d’HTML, CSS i JavaScript",
       lema: "Aprèn desenvolupament web des de zero i crea la teva pròpia pàgina.",
-      ctaButton: "Inscriu-te ara",
+      ctaButton: "Contacte",
       firstBlock: {
         title: "Detalls del curs",
         items: [

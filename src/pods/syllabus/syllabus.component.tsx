@@ -1,21 +1,33 @@
 import { IconListItemModel } from "../../common/model";
 import { Button, InfoBox, Title } from "../../components";
-import { useLanguageStore } from "../../store";
+import { useActiveSessionStore, useLanguageStore } from "../../store";
 import { PAGES_SYLLABUS } from "../../db/syllabus";
-import { ButtonContainer } from "./components/button-container";
 import styles from "./syllabus.module.scss";
+import { useNavigate } from "react-router-dom";
 
 export const Syllabus = () => {
+  const navigate = useNavigate();
   const { language } = useLanguageStore();
+  const { setSessionIndex } = useActiveSessionStore();
   const content = PAGES_SYLLABUS[language];
   const items = content.items as IconListItemModel[];
   const lastItem = items.length - 1;
 
-  const handleClickDetails = () => {};
+  const handleCtaClick = () => {
+    navigate("/contact");
+  };
+
+  const handleClickDetails = (id: number) => {
+    setSessionIndex(id - 1);
+    navigate("/details");
+  };
 
   return (
     <>
-      <Title text={content.title} />
+      <div className={styles["header-container"]}>
+        <Title text={content.title} />
+        <Button text={content.ctaButton} onClick={handleCtaClick} />
+      </div>
       <div className={styles["item-container"]}>
         {items.map((item) => {
           if (items.indexOf(item) === lastItem) {
@@ -27,7 +39,7 @@ export const Syllabus = () => {
                 text={item.value}
                 title={item.text}
               >
-                <ButtonContainer />
+                <Button text={content.ctaButton} onClick={handleCtaClick} />
               </InfoBox>
             );
           }
@@ -42,7 +54,7 @@ export const Syllabus = () => {
             >
               <Button
                 text={content.detailsButton}
-                onClick={handleClickDetails}
+                onClick={() => handleClickDetails(item.id)}
               />
             </InfoBox>
           );

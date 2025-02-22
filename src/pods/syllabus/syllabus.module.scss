@@ -3,3 +3,9 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -63,7 +63,7 @@ export const PAGES_SYLLABUS = {
   },
   spanish: {
     title: "Plan de estudios del curso",
-    ctaButton: "Contacta",
+    ctaButton: "Contacto",
     downloadButton: "Descarga Syllabus",
     detailsButton: "Detalles",
     items: [
@@ -126,7 +126,7 @@ export const PAGES_SYLLABUS = {
   },
   catalan: {
     title: "Pla d'estudis del curs",
-    ctaButton: "Contacta",
+    ctaButton: "Contacte",
     downloadButton: "Descarrega Syllabus",
     detailsButton: "Detalls",
     items: [

@@ -14,3 +14,15 @@
     background-color: #747bff;
   }
 }
+
+.secondary {
+  background-color: #f0edff;
+  color: #634aff;
+  border: 1px solid #f0edff;
+
+  &:hover {
+    background-color: #f0edff;
+    color: #634aff;
+    border: 1px solid #634aff;
+  }
+}

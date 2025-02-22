@@ -22,4 +22,11 @@ describe("Button", () => {
     fireEvent.click(screen.getByText(props.text));
     expect(props.onClick).toHaveBeenCalledTimes(1);
   });
+
+  // it("applies secondary class when secondary prop is true", () => {
+  //   props.secondary = true;
+  //   const { container } = render(<Button {...props} />);
+  //   screen.debug();
+  //   expect(container.getAttributeNames().length).toBe(1);
+  // });
 });

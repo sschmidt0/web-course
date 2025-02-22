@@ -3,6 +3,7 @@ export const PAGES_SYLLABUS = {
     title: "Course Syllabus",
     ctaButton: "Contact",
     downloadButton: "Download Syllabus",
+    detailsButton: "Details",
     items: [
       {
         id: 1,
@@ -64,6 +65,7 @@ export const PAGES_SYLLABUS = {
     title: "Plan de estudios del curso",
     ctaButton: "Contacta",
     downloadButton: "Descarga Syllabus",
+    detailsButton: "Detalles",
     items: [
       {
         id: 1,
@@ -126,6 +128,7 @@ export const PAGES_SYLLABUS = {
     title: "Pla d'estudis del curs",
     ctaButton: "Contacta",
     downloadButton: "Descarrega Syllabus",
+    detailsButton: "Detalls",
     items: [
       {
         id: 1,

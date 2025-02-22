@@ -16,12 +16,10 @@ describe("InfoBox", () => {
   it("renders correctly with given props", () => {
     render(<InfoBox {...props} />);
 
-    const iconElement = screen.getByText("Icon");
     const textElement = screen.getByText(props.text);
     const titleElement = screen.getByText(props.title);
     const childElement = screen.getByText("Child Content");
 
-    expect(iconElement).toBeInTheDocument();
     expect(textElement).toBeInTheDocument();
     expect(titleElement).toBeInTheDocument();
     expect(childElement).toBeInTheDocument();

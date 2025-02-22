@@ -1,0 +1,13 @@
+.item {
+  margin: 0;
+  padding: 20px;
+  cursor: pointer;
+
+  &-active {
+    padding: 20px;
+    color: #646cff;
+    background-color: #f7f6ff;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

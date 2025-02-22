@@ -1,5 +1,6 @@
 import { TextButton } from "../../components/atoms/text-button";
 import { useLanguageStore } from "../../store";
+import { Navbar } from "./components/navbar";
 import styles from "./header.module.scss";
 
 export const Header = () => {
@@ -7,7 +8,7 @@ export const Header = () => {
 
   return (
     <div className={styles.container}>
-      <div>HEADER</div>
+      <Navbar />
       <div className={styles["language-container"]}>
         <TextButton text="català" onClick={() => setLanguage("catalan")} />
         <TextButton text="español" onClick={() => setLanguage("spanish")} />

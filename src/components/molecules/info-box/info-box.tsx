@@ -18,7 +18,6 @@ export const InfoBox: React.FC<InfoBoxProps> = ({
   children,
 }) => {
   const itemIcon = APP_ICONS[icon as keyof typeof APP_ICONS];
-  console.log({ itemIcon });
 
   return (
     <div className={styles.container}>

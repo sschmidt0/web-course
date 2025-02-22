@@ -1,13 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { AppRoutes } from "./common/routing/Routes";
 import { HeaderContainer } from "./pods/header";
-import { IntroContainer } from "./pods/intro";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <HeaderContainer />
-      <IntroContainer />
-    </>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 

@@ -1,4 +1,4 @@
-export const PAGES = {
+export const PAGES_HOME = {
   english: {
     pageIntro: {
       title: "Web Development Course",

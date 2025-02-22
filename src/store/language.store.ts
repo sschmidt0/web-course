@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { devtools } from "zustand/middleware";
 
 type Language = "catalan" | "spanish" | "english";
 
@@ -7,7 +8,9 @@ interface LanguageState {
   setLanguage: (language: Language) => void;
 }
 
-export const useLanguageStore = create<LanguageState>((set) => ({
-  language: "catalan",
-  setLanguage: (language) => set({ language }),
-}));
+export const useLanguageStore = create<LanguageState>()(
+  devtools((set) => ({
+    language: "catalan",
+    setLanguage: (language: Language) => set({ language }),
+  }))
+);

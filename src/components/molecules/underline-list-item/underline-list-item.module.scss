@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: #646cff;
+  background-color: #f7f6ff;
+  border-radius: 16px;
+}
+
+.innerContainer {
+  display: flex;
+  width: 100%;
+
+  & > div {
+    width: 50%;
+  }
+}

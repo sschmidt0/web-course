@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { IconListItemModel } from "../../common/model";
 import { InfoBox, Title, Button, UnderlineList } from "../../components";
 import { IconList } from "../../components/organisms/icon-list/icon-list";
@@ -7,6 +8,8 @@ import { useLanguageStore } from "../../store";
 
 export const Intro = () => {
   const { language } = useLanguageStore();
+  const navigate = useNavigate();
+
   const content = PAGES_HOME[language].pageIntro;
   const firstBlockItems = content.firstBlock
     .items as unknown as IconListItemModel[];
@@ -15,7 +18,9 @@ export const Intro = () => {
   const thirdBlockItems = content.thirdBlock
     .items as unknown as IconListItemModel[];
 
-  const handleCtaClick = () => {};
+  const handleCtaClick = () => {
+    navigate("/contact");
+  };
 
   return (
     <>

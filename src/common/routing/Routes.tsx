@@ -1,12 +1,22 @@
 import { Routes, Route } from "react-router-dom";
-import { Intro } from "../../pods/intro/intro.component";
-import { Syllabus } from "../../pods/syllabus/syllabus.component";
+import {
+  AboutScreen,
+  ContactScreen,
+  DetailScreen,
+  IntroScreen,
+  NotFoundScreen,
+  SyllabusScreen,
+} from "../../screens";
 
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Intro />} />
-      <Route path="/syllabus" element={<Syllabus />} />
+      <Route path="/" element={<IntroScreen />} />
+      <Route path="/about" element={<AboutScreen />} />
+      <Route path="/contact" element={<ContactScreen />} />
+      <Route path="/details" element={<DetailScreen />} />
+      <Route path="/syllabus" element={<SyllabusScreen />} />
+      <Route path="*" element={<NotFoundScreen />} />
     </Routes>
   );
 };

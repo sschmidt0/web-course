@@ -1,4 +1,5 @@
 export interface IconListItemModel {
+  id: number;
   duration?: string;
   icon: string;
   text: string;

@@ -1,16 +1,19 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import { InfoBox } from "./info-box";
+import { describe, it, expect, beforeEach } from "vitest";
+import { InfoBox, InfoBoxProps } from "./info-box";
 
 describe("InfoBox", () => {
-  it("renders correctly with given props", () => {
-    const props = {
+  let props: InfoBoxProps;
+
+  beforeEach(() => {
+    props = {
       icon: <span>Icon</span>,
       text: "Sample Text",
       title: "Sample Title",
       children: <div>Child Content</div>,
     };
-
+  });
+  it("renders correctly with given props", () => {
     render(<InfoBox {...props} />);
 
     const iconElement = screen.getByText("Icon");
@@ -25,7 +28,7 @@ describe("InfoBox", () => {
   });
 
   it("renders correctly without icon and children", () => {
-    const props = {
+    props = {
       text: "Sample Text",
       title: "Sample Title",
     };

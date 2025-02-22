@@ -1,15 +1,22 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import { UnderlineListItem } from "./underline-list-item";
+import { describe, it, expect, beforeEach } from "vitest";
+import {
+  UnderlineListItem,
+  UnderlineListItemProps,
+} from "./underline-list-item";
 
 describe("UnderlineListItem", () => {
-  it("renders correctly with given props", () => {
-    const props = {
+  let props: UnderlineListItemProps;
+
+  beforeEach(() => {
+    props = {
       icon: "sampleIcon",
       text: "Sample Text",
       value: "Sample Value",
     };
+  });
 
+  it("renders correctly with given props", () => {
     render(<UnderlineListItem {...props} />);
 
     const textElement = screen.getByText(props.text);

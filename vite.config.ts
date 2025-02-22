@@ -9,7 +9,12 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     coverage: {
-      exclude: ["**/index.ts"],
+      exclude: [
+        "**/index.ts",
+        "**/db/**",
+        "**/**.config.js",
+        "**/**.config.ts",
+      ],
       provider: "v8", // or 'v8'
       reporter: ["text", "json", "html"],
     },
@@ -22,6 +27,7 @@ export default defineConfig({
       "**/.{idea,git,cache,output,temp}/**",
       "./src/config/**",
       "**/index.ts",
+      ".src/db/**",
     ],
   },
 });

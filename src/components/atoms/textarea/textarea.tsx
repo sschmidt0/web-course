@@ -1,31 +1,27 @@
 import React from "react";
 import styles from "./textarea.module.scss";
+import { UseFormRegister } from "react-hook-form";
+import { InputType } from "../../../common/model";
 
-export interface TextareaProps {
+export type TextareaProps = {
   label: string;
-  placeholder: string;
-  value: string;
-  onChange: (value: string) => void;
-}
+  name: InputType;
+  register: UseFormRegister<{ name: string; email: string; message: string }>;
+} & React.HTMLProps<HTMLTextAreaElement>;
 
 export const Textarea: React.FC<TextareaProps> = ({
   label,
-  onChange,
+  name,
   placeholder,
-  value,
+  register,
 }) => {
-  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    onChange(event.target.value);
-  };
-
   return (
     <div className={styles.container}>
       <label>{label}</label>
       <textarea
+        {...register(name)}
         className={styles.textarea}
-        value={value}
         placeholder={placeholder}
-        onChange={handleChange}
       />
     </div>
   );

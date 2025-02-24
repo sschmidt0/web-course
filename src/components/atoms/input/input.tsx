@@ -1,32 +1,30 @@
 import React from "react";
 import styles from "./input.module.scss";
+import { UseFormRegister } from "react-hook-form";
+import { InputType } from "../../../common/model";
 
-export interface InputProps {
+export type InputProps = {
   label: string;
-  placeholder: string;
-  value: string;
-  onChange: (value: string) => void;
-}
+  name: InputType;
+  register: UseFormRegister<{ name: string; email: string; message: string }>;
+  type?: string;
+} & React.HTMLProps<HTMLInputElement>;
 
 export const Input: React.FC<InputProps> = ({
   label,
-  onChange,
+  name,
   placeholder,
-  value,
+  register,
+  type = "text",
 }) => {
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(event.target.value);
-  };
-
   return (
     <div className={styles.container}>
       <label>{label}</label>
       <input
+        {...register(name)}
         className={styles.input}
-        type="text"
-        value={value}
+        type={type}
         placeholder={placeholder}
-        onChange={handleChange}
       />
     </div>
   );

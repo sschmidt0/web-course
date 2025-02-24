@@ -1,11 +1,23 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .button {
-  padding: 12px;
   width: fit-content;
+  padding: 12px;
+  color: #fff;
+  background-color: #634aff;
+  border: none;
   border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: #747bff;
+  }
 }

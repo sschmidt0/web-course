@@ -1,16 +1,11 @@
 import React from "react";
-import { FieldValues, useForm } from "react-hook-form";
-import { z } from "zod";
+import { useForm } from "react-hook-form";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorMessage, Input, Textarea } from "../../../components";
 import { FormModel } from "../../../common/model";
 import styles from "./form.module.scss";
-
-const contactSchema = z.object({
-  name: z.string().nonempty("Name is required"),
-  email: z.string().email("Email is not valid").nonempty("Email is required"),
-  message: z.string().nonempty("Message is required"),
-});
+import { ContactFormValues, contactSchema } from "../../../common/schemas";
 
 export interface FormProps {
   form: FormModel;
@@ -22,9 +17,9 @@ export const Form: React.FC<FormProps> = ({ form }) => {
     handleSubmit,
     register,
     reset,
-  } = useForm({ resolver: zodResolver(contactSchema) });
+  } = useForm<ContactFormValues>({ resolver: zodResolver(contactSchema) });
 
-  const onSubmit = async (data: FieldValues) => {
+  const onSubmit = async (data: ContactFormValues) => {
     console.log(data);
 
     await new Promise((resolve) => {

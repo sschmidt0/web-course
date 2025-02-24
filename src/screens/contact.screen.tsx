@@ -1,3 +1,5 @@
+import { ContactContainer } from "../pods/contact";
+
 export const ContactScreen = () => {
-  return <div>Contact</div>;
+  return <ContactContainer />;
 };

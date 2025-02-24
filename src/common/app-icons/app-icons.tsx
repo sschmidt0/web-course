@@ -8,6 +8,7 @@ import {
   MdSchool,
   MdOutlineConstruction,
   MdCloudUpload,
+  MdSend,
 } from "react-icons/md";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 
@@ -23,7 +24,8 @@ type IconType =
   | "school"
   | "star"
   | "upload"
-  | "done";
+  | "done"
+  | "send";
 
 export const APP_ICONS: Record<IconType, React.ReactNode> = {
   construction: <MdOutlineConstruction />,
@@ -36,6 +38,7 @@ export const APP_ICONS: Record<IconType, React.ReactNode> = {
   location: <MdLocationOn />,
   schedule: <MdSchedule />,
   school: <MdSchool />,
+  send: <MdSend />,
   star: <FaStar />,
   upload: <MdCloudUpload />,
 } as const;

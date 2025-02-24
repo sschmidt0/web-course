@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  padding: 12px;
+  width: fit-content;
+  border-radius: 12px;
+}

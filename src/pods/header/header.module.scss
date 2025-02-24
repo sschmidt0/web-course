@@ -2,22 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
   padding: "20px";
   border: "1px solid #646cff";
-}
-
-.language-container {
-  display: flex;
-  justify-content: center;
-  color: #646cff;
-
-  div {
-    margin: 0;
-    padding: 0 12px;
-    cursor: pointer;
-  }
-
-  div:not(:last-child) {
-    border-right: 1px solid #646cff;
-  }
 }

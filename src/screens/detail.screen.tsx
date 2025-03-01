@@ -1,3 +1,5 @@
+import { DetailContainer } from "../pods/detail";
+
 export const DetailScreen = () => {
-  return <div>Detail</div>;
+  return <DetailContainer />;
 };

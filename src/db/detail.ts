@@ -20,6 +20,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "Personal Introduction Page",
@@ -49,6 +50,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "Customizing Webpages",
@@ -80,6 +82,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "Responsive Webpage",
@@ -111,6 +114,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "Add interactivity to the webpage",
@@ -152,6 +156,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "Complete Website",
@@ -189,6 +194,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "SEO Audit",
@@ -220,6 +226,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Practical Exercises",
+        subtitle: "It's time to practice what you've learned!",
         practicalExercises: [
           {
             title: "Deploy Your Website",
@@ -258,6 +265,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Página de presentación personal",
@@ -287,6 +295,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Personalización de páginas web",
@@ -318,6 +327,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Página web adaptable",
@@ -349,6 +359,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Añadir interactividad a la página web",
@@ -390,6 +401,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Sitio web completo",
@@ -429,6 +441,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Auditoría SEO",
@@ -462,6 +475,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Ejercicios prácticos",
+        subtitle: "¡Es tiempo de poner en práctica lo que has aprendido!",
         practicalExercises: [
           {
             title: "Publicación de tu sitio web",
@@ -502,6 +516,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Pàgina de presentació personal",
@@ -531,6 +546,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Personalització de pàgines web",
@@ -562,6 +578,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Pàgina web adaptable",
@@ -593,6 +610,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Afegir interactivitat a la pàgina web",
@@ -634,6 +652,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Lloc web complet",
@@ -671,6 +690,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Auditoria SEO",
@@ -704,6 +724,7 @@ export const PAGE_DETAIL_COURSE = {
           },
         ],
         exercises: "Exercicis pràctics",
+        subtitle: "És temps de posar en pràctica el que has après!",
         practicalExercises: [
           {
             title: "Publicació del teu lloc web",

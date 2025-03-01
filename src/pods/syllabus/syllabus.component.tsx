@@ -18,8 +18,9 @@ export const Syllabus = () => {
   };
 
   const handleClickDetails = (id: number) => {
-    setSessionIndex(id - 1);
-    navigate("/details");
+    const newId = id - 1;
+    setSessionIndex(newId);
+    navigate("/details", { state: { id: newId } });
   };
 
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./info-box.module.scss";
 import { APP_ICONS } from "../../../common/app-icons";
+import { IconBox } from "../../atoms";
 
 export interface InfoBoxProps {
   children?: React.ReactNode;
@@ -21,7 +22,7 @@ export const InfoBox: React.FC<InfoBoxProps> = ({
 
   return (
     <div className={styles.container}>
-      {icon && <div className={styles.icon}>{itemIcon}</div>}
+      {icon && <IconBox icon={itemIcon} />}
       {duration && <p className={styles.duration}>{duration}</p>}
       <h3 className={styles.title}>{title}</h3>
       <p>{text}</p>

@@ -11,6 +11,8 @@ import {
   MdSend,
 } from "react-icons/md";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import { FiMenu } from "react-icons/fi";
+import { IoMdClose } from "react-icons/io";
 
 type IconType =
   | "construction"
@@ -25,7 +27,9 @@ type IconType =
   | "star"
   | "upload"
   | "done"
-  | "send";
+  | "send"
+  | "menu-open"
+  | "menu-close";
 
 export const APP_ICONS: Record<IconType, React.ReactNode> = {
   construction: <MdOutlineConstruction />,
@@ -41,4 +45,6 @@ export const APP_ICONS: Record<IconType, React.ReactNode> = {
   send: <MdSend />,
   star: <FaStar />,
   upload: <MdCloudUpload />,
+  "menu-open": <FiMenu />,
+  "menu-close": <IoMdClose />,
 } as const;

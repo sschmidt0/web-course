@@ -1,3 +1,5 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,10 +8,10 @@
 
 .input {
   padding: 12px 20px;
-  background-color: #f8f8f7;
+  background-color: $grey;
   border-radius: 12px;
   border: none;
-  color: #333;
+  color: $dark;
 
   &:focus {
     outline: none;

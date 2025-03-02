@@ -1,7 +1,9 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   padding: 20px;
   border-radius: 20px;
-  background-color: #f7f6ff;
+  background-color: $light-white;
 }
 
 .title {

@@ -1,8 +1,10 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
   padding: "20px";
-  border: "1px solid #646cff";
+  border: "1px solid $tertiary";
 }

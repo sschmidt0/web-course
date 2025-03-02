@@ -1,14 +1,18 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 32px;
 }
 
 .button {
   width: fit-content;
+  margin-top: 6px;
   padding: 12px;
-  color: #fff;
-  background-color: #634aff;
+  color: $white;
+  background-color: $primary;
   border: none;
   border-radius: 12px;
   font-size: 14px;
@@ -17,7 +21,7 @@
   cursor: pointer;
 
   &:hover {
-    color: #fff;
-    background-color: #747bff;
+    color: $white;
+    background-color: $secondary;
   }
 }

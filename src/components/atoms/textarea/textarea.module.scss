@@ -1,3 +1,5 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,10 +10,10 @@
   height: 100px;
   padding: 12px 20px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #f8f8f7;
+  background-color: $grey;
   border-radius: 20px;
   border: none;
-  color: #333;
+  color: $dark;
 
   &:focus {
     outline: none;

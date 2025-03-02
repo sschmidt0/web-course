@@ -1,3 +1,5 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   display: flex;
   align-items: center;
@@ -10,13 +12,13 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  color: #646cff;
-  background-color: #f7f6ff;
+  color: $tertiary;
+  background-color: $light-white;
   border-radius: 16px;
 }
 
 .title {
   font-size: 16px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: $title-dark;
 }

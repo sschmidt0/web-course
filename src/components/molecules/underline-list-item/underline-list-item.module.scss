@@ -1,9 +1,11 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 8px 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $light-grey;
 }
 
 .icon {
@@ -12,8 +14,8 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  color: #646cff;
-  background-color: #f7f6ff;
+  color: $tertiary;
+  background-color: $light-white;
   border-radius: 16px;
 }
 

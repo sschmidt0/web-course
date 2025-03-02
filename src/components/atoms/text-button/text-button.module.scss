@@ -1,14 +1,16 @@
+@import "@/assets/scss/colours.scss";
+
 .button {
   padding: 8px 12px;
-  color: #747bff;
+  color: $secondary;
 
-  background-color: #fff;
+  background-color: $white;
   border: 0;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
 
   &:hover {
-    color: #634aff;
+    color: $primary;
   }
 }

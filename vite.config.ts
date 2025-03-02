@@ -30,4 +30,9 @@ export default defineConfig({
       ".src/db/**",
     ],
   },
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
 });

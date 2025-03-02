@@ -1,3 +1,5 @@
+@import "@/assets/scss/colours.scss";
+
 .item {
   margin: 0;
   padding: 16px;
@@ -5,8 +7,8 @@
 
   &-active {
     padding: 16px;
-    color: #646cff;
-    background-color: #f7f6ff;
+    color: $tertiary;
+    background-color: $light-white;
     border-radius: 20px;
     cursor: pointer;
   }

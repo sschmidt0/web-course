@@ -1,4 +1,5 @@
 import { FaUserGroup, FaStar, FaLaptop } from "react-icons/fa6";
+import { FaClipboardList, FaHome } from "react-icons/fa";
 import {
   MdSchedule,
   MdLocationOn,
@@ -13,6 +14,7 @@ import {
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+import { IoPerson } from "react-icons/io5";
 
 type IconType =
   | "construction"
@@ -29,7 +31,10 @@ type IconType =
   | "done"
   | "send"
   | "menu-open"
-  | "menu-close";
+  | "menu-close"
+  | "person"
+  | "program"
+  | "home";
 
 export const APP_ICONS: Record<IconType, React.ReactNode> = {
   construction: <MdOutlineConstruction />,
@@ -47,4 +52,7 @@ export const APP_ICONS: Record<IconType, React.ReactNode> = {
   upload: <MdCloudUpload />,
   "menu-open": <FiMenu />,
   "menu-close": <IoMdClose />,
+  person: <IoPerson />,
+  program: <FaClipboardList />,
+  home: <FaHome />,
 } as const;

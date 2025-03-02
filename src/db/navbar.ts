@@ -1,21 +1,25 @@
 export const NAVBAR_ITEMS = [
   {
     id: 1,
+    icon: "home",
     text: "Home",
     route: "/",
   },
   {
     id: 2,
+    icon: "program",
     text: "Syllabus",
     route: "/syllabus",
   },
   {
     id: 3,
+    icon: "person",
     text: "About",
     route: "/about",
   },
   {
     id: 4,
+    icon: "send",
     text: "Contact",
     route: "/contact",
   },

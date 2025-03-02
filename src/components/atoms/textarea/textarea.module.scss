@@ -8,7 +8,7 @@
 
 .textarea {
   height: 100px;
-  padding: 12px 20px;
+  padding: 12px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: $grey;
   border-radius: 20px;
@@ -17,5 +17,17 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 12px 20px;
+  }
+}
+
+.label {
+  margin-left: 12px;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 20px;
   }
 }

@@ -4,11 +4,14 @@ import { useActiveSessionStore, useLanguageStore } from "../../store";
 import { PAGES_SYLLABUS } from "../../db/syllabus";
 import styles from "./syllabus.module.scss";
 import { useNavigate } from "react-router-dom";
+import { isSmallScreen } from "../../common/helper";
 
 export const Syllabus = () => {
   const navigate = useNavigate();
   const { language } = useLanguageStore();
   const { setSessionIndex } = useActiveSessionStore();
+  const isMobile = isSmallScreen();
+
   const content = PAGES_SYLLABUS[language];
   const items = content.items as IconListItemModel[];
   const lastItem = items.length - 1;
@@ -33,15 +36,22 @@ export const Syllabus = () => {
         {items.map((item) => {
           if (items.indexOf(item) === lastItem) {
             return (
-              <InfoBox
-                key={item.text}
-                duration={item.duration}
-                icon={item.icon}
-                text={item.value}
-                title={item.text}
-              >
-                <Button text={content.ctaButton} onClick={handleCtaClick} />
-              </InfoBox>
+              <>
+                <InfoBox
+                  key={item.text}
+                  duration={item.duration}
+                  icon={item.icon}
+                  text={item.value}
+                  title={item.text}
+                />
+                {isMobile && (
+                  <Button
+                    className={styles.button}
+                    text={content.ctaButton}
+                    onClick={handleCtaClick}
+                  />
+                )}
+              </>
             );
           }
 

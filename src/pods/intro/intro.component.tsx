@@ -5,10 +5,12 @@ import { IconList } from "../../components/organisms/icon-list/icon-list";
 import { PAGES_HOME } from "../../db/intro";
 import styles from "./intro.module.scss";
 import { useLanguageStore } from "../../store";
+import { isSmallScreen } from "../../common/helper";
 
 export const Intro = () => {
   const { language } = useLanguageStore();
   const navigate = useNavigate();
+  const isMobile = isSmallScreen();
 
   const content = PAGES_HOME[language].pageIntro;
   const firstBlockItems = content.firstBlock
@@ -43,6 +45,13 @@ export const Intro = () => {
         title={content.thirdBlock.title}
         items={thirdBlockItems}
       />
+      {isMobile && (
+        <Button
+          className={styles.button}
+          text={content.ctaButton}
+          onClick={handleCtaClick}
+        />
+      )}
     </>
   );
 };

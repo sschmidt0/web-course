@@ -7,7 +7,7 @@
 }
 
 .input {
-  padding: 12px 20px;
+  padding: 12px;
   background-color: $grey;
   border-radius: 12px;
   border: none;
@@ -15,5 +15,17 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 12px 20px;
+  }
+}
+
+.label {
+  margin-left: 12px;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 20px;
   }
 }

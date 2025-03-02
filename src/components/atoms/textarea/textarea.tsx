@@ -17,7 +17,7 @@ export const Textarea: React.FC<TextareaProps> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <label>{label}</label>
+      <label className={styles.label}>{label}</label>
       <textarea
         {...register(name)}
         className={styles.textarea}

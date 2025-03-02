@@ -8,13 +8,13 @@
 }
 
 .button {
-  width: fit-content;
-  margin-top: 6px;
+  width: 100%;
+  margin: 12px 0;
   padding: 12px;
   color: $white;
   background-color: $primary;
   border: none;
-  border-radius: 12px;
+  border-radius: 4px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -23,5 +23,12 @@
   &:hover {
     color: $white;
     background-color: $secondary;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .button {
+    margin-top: 6px;
+    width: fit-content;
   }
 }

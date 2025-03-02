@@ -1,7 +1,7 @@
+import { useLanguageStore } from "../../store";
+import { PAGE_CONTACT } from "../../db/contact";
 import { FormModel, IconListItemModel } from "../../common/model";
 import { InfoBox } from "../../components";
-import { PAGE_CONTACT } from "../../db/contact";
-import { useLanguageStore } from "../../store";
 import { Form } from "./components/form";
 import styles from "./contact.module.scss";
 

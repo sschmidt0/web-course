@@ -19,7 +19,7 @@ export const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <label>{label}</label>
+      <label className={styles.label}>{label}</label>
       <input
         {...register(name)}
         className={styles.input}

@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./icon-button.module.scss";
-import SpanishFlag from "../../../assets/spanish.svg";
-import CatalanFlag from "../../../assets/catalan.svg";
-import EnglishFlag from "../../../assets/english.svg";
+import SpanishFlag from "../../../../public/assets/spanish.svg";
+import CatalanFlag from "../../../../public/assets/catalan.svg";
+import EnglishFlag from "../../../../public/assets/english.svg";
+import Image from "next/image";
 
 const FLAGS = {
   spanish: SpanishFlag,
@@ -22,7 +23,7 @@ export const IconButton: React.FC<IconButtonProps> = ({ icon, onClick }) => {
   return (
     <button onClick={onClick} className={styles.button}>
       <div className={styles["image-container"]}>
-        <img
+        <Image
           className={styles.image}
           src={src}
           alt={`translate into ${icon}`}

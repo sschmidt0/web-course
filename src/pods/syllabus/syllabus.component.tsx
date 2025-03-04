@@ -38,7 +38,7 @@ export const Syllabus = () => {
             return (
               <>
                 <InfoBox
-                  key={item.text}
+                  key={item.icon.toString()}
                   duration={item.duration}
                   icon={item.icon}
                   text={item.value}
@@ -57,7 +57,7 @@ export const Syllabus = () => {
 
           return (
             <InfoBox
-              key={item.text}
+              key={item.icon.toString()}
               duration={item.duration}
               icon={item.icon}
               text={item.value}

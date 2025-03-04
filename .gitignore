@@ -28,3 +28,5 @@ dist
 *.sw?
 
 coverage
+.env
+.env.local

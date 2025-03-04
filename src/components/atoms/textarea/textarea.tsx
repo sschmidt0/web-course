@@ -6,7 +6,11 @@ import { InputType } from "../../../common/model";
 export type TextareaProps = {
   label: string;
   name: InputType;
-  register: UseFormRegister<{ name: string; email: string; message: string }>;
+  register: UseFormRegister<{
+    username: string;
+    email: string;
+    message: string;
+  }>;
 } & React.HTMLProps<HTMLTextAreaElement>;
 
 export const Textarea: React.FC<TextareaProps> = ({

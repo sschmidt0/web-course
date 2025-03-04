@@ -1,7 +1,6 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
-
-type Language = "catalan" | "spanish" | "english";
+import { Language } from "@/common/model/language";
 
 interface LanguageState {
   language: Language;

@@ -1,5 +1,5 @@
 export interface FormModel {
-  name: string;
+  username: string;
   placeholderName: string;
   email: string;
   placeholderEmail: string;
@@ -10,4 +10,4 @@ export interface FormModel {
   sendButton: string;
 }
 
-export type InputType = "name" | "email" | "message";
+export type InputType = "username" | "email" | "message";

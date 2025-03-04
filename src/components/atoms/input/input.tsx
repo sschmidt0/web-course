@@ -6,7 +6,11 @@ import { InputType } from "../../../common/model";
 export type InputProps = {
   label: string;
   name: InputType;
-  register: UseFormRegister<{ name: string; email: string; message: string }>;
+  register: UseFormRegister<{
+    username: string;
+    email: string;
+    message: string;
+  }>;
   type?: string;
 } & React.HTMLProps<HTMLInputElement>;
 

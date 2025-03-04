@@ -1,11 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorMessage, Input, Textarea } from "../../../components";
 import { FormModel } from "../../../common/model";
 import styles from "./form.module.scss";
 import { ContactFormValues, contactSchema } from "../../../common/schemas";
+import { useSendEmail } from "../contact.hook";
 
 export interface FormProps {
   form: FormModel;
@@ -19,25 +19,30 @@ export const Form: React.FC<FormProps> = ({ form }) => {
     reset,
   } = useForm<ContactFormValues>({ resolver: zodResolver(contactSchema) });
 
+  const { isError, isSending, isSuccess, sendEmail } = useSendEmail();
+
   const onSubmit = async (data: ContactFormValues) => {
-    console.log(data);
-
-    await new Promise((resolve) => {
-      setTimeout(resolve, 2000);
-    });
-
-    reset();
+    try {
+      await sendEmail(data);
+    } catch (error) {
+      console.log("Error sending email:", error);
+    } finally {
+      if (isSuccess) reset();
+    }
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.container}>
+      {isError && <ErrorMessage message={"error sending email"} />}
       <Input
-        label={form.name}
-        name="name"
+        label={form.username}
+        name="username"
         placeholder={form.placeholderName}
         register={register}
       />
-      {errors?.name?.message && <ErrorMessage message={errors.name.message} />}
+      {errors?.username?.message && (
+        <ErrorMessage message={errors.username.message} />
+      )}
 
       <Input
         label={form.email}
@@ -60,12 +65,16 @@ export const Form: React.FC<FormProps> = ({ form }) => {
         <ErrorMessage message={errors.message.message} />
       )}
 
-      <input
-        className={styles.button}
-        disabled={isSubmitting}
-        type="submit"
-        value={form.sendButton}
-      />
+      {isSending ? (
+        <div>sending...</div>
+      ) : (
+        <input
+          className={styles.button}
+          disabled={isSubmitting}
+          type="submit"
+          value={form.sendButton}
+        />
+      )}
     </form>
   );
 };

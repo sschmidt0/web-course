@@ -3,9 +3,9 @@ export const PAGE_CONTACT = {
     info: {
       id: 1,
       icon: "send",
-      text: "Get in Touch",
+      text: "Get in Touch with Me",
       value:
-        "Have questions about the course? Send us a message and we'll get back to you within 24 hours.",
+        "Do you have questions about the course? Send me a message and I'll get back to you within 24 hours.",
     },
     form: {
       name: "Name",
@@ -23,9 +23,9 @@ export const PAGE_CONTACT = {
     info: {
       id: 1,
       icon: "send",
-      text: "Contáctanos",
+      text: "Contáctame",
       value:
-        "¿Tienes preguntas sobre el curso? Envíanos un mensaje y te responderemos en un plazo de 24 horas.",
+        "¿Tienes preguntas sobre el curso? Envíame un mensaje y te responderé en un plazo de 24 horas.",
     },
     form: {
       name: "Nombre",
@@ -43,9 +43,9 @@ export const PAGE_CONTACT = {
     info: {
       id: 1,
       icon: "send",
-      text: "Contacta'ns",
+      text: "Contacta'm",
       value:
-        "Tens preguntes sobre el curs? Envia'ns un missatge i et respondrem en un termini de 24 hores.",
+        "Tens preguntes sobre el curs? Envia'm un missatge i et respondré en un termini de 24 hores.",
     },
     form: {
       name: "Nom",

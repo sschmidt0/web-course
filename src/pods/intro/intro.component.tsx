@@ -38,11 +38,6 @@ export const Intro = () => {
         title={content.firstBlock.title}
         items={firstBlockItems}
       />
-      {/* <UnderlineList
-        className={styles["list-margin"]}
-        title={content.secondBlock.title}
-        items={secondBlockItems}
-      /> */}
       <OverViewItems items={secondBlockItems} />
       <IconList
         className={styles["list-margin"]}

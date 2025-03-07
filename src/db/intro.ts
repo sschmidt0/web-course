@@ -5,6 +5,7 @@ export const PAGES_HOME = {
       subTitle: "HTML, CSS & JavaScript Course",
       lema: "Learn web development from scratch and build your own website.",
       ctaButton: "Contact",
+      text: "Do you want to learn how to create your own website from scratch and don't know where to start? This course is for you! In this practical web development course you will learn the fundamentals of web development and end up implementing a functional website that you can show to the world. And the best part: No prior experience is required!",
       firstBlock: {
         title: "Course details",
         items: [
@@ -84,6 +85,7 @@ export const PAGES_HOME = {
       subTitle: "Curso de HTML, CSS y JavaScript",
       lema: "Aprende desarrollo web desde cero y crea tu propia página.",
       ctaButton: "Contacto",
+      text: "¿Quieres aprender a crear tu propia página web desde cero y no sabes por dónde empezar? ¡Este curso es para ti! En este curso práctico de desarrollo web aprenderás los fundamentos de desarrollo web y terminarás implementando una página funcional que podrás mostrar al mundo. Y lo mejor: ¡No se requiere experiencia previa!",
       firstBlock: {
         title: "Detalles del curso",
         items: [
@@ -163,6 +165,7 @@ export const PAGES_HOME = {
       subTitle: "Curs d’HTML, CSS i JavaScript",
       lema: "Aprèn desenvolupament web des de zero i crea la teva pròpia pàgina.",
       ctaButton: "Contacte",
+      text: "Vols aprendre a crear la teva pròpia pàgina web des de zero i no saps per on començar? Aquest curs és per a tu! En aquest curs pràctic de desenvolupament web aprendràs els fonaments de desenvolupament web i acabaràs implementant una pàgina funcional que podràs mostrar al món. I el millor: No es requereix experiència prèvia!",
       firstBlock: {
         title: "Detalls del curs",
         items: [

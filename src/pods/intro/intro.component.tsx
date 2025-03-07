@@ -6,6 +6,7 @@ import { PAGES_HOME } from "../../db/intro";
 import styles from "./intro.module.scss";
 import { useLanguageStore } from "../../store";
 import { isSmallScreen } from "../../common/helper";
+import { IntroText } from "./components/intro-text";
 
 export const Intro = () => {
   const { language } = useLanguageStore();
@@ -30,6 +31,7 @@ export const Intro = () => {
       <InfoBox text={content.lema} title={content.subTitle} icon={"code"}>
         <Button text={content.ctaButton} onClick={handleCtaClick} />
       </InfoBox>
+      <IntroText className={styles.text} text={content.text} />
       <IconList
         className={styles["list-margin"]}
         title={content.firstBlock.title}

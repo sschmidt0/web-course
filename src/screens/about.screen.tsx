@@ -1,3 +1,5 @@
+import { AboutContainer } from "@/pods/about";
+
 export const AboutScreen = () => {
-  return <div>About</div>;
+  return <AboutContainer />;
 };

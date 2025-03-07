@@ -9,6 +9,7 @@ export const IconListItem: React.FC<IconListItemProps> = ({
   icon,
   text,
   value,
+  value2,
 }) => {
   const itemIcon = APP_ICONS[icon as keyof typeof APP_ICONS];
 
@@ -18,6 +19,7 @@ export const IconListItem: React.FC<IconListItemProps> = ({
       <div>
         <div className={styles.title}>{text}</div>
         <div>{value}</div>
+        {value2 && <div className={styles.info}>{value2}</div>}
       </div>
     </div>
   );

@@ -47,13 +47,21 @@ export const PAGES_SYLLABUS = {
       },
       {
         id: 6,
-        icon: "upload",
+        icon: "seo",
         duration: "2 hours",
         text: "Session 6",
-        value: "Website Publication and Course Completion. Deploy your site.",
+        value:
+          "SEO strategy and website performance. Introduction to accessibility.",
       },
       {
         id: 7,
+        icon: "upload",
+        duration: "2 hours",
+        text: "Session 7",
+        value: "Website Publication and Course Completion. Deploy your site.",
+      },
+      {
+        id: 8,
         icon: "group",
         text: "Ready to start?",
         value:
@@ -109,14 +117,22 @@ export const PAGES_SYLLABUS = {
       },
       {
         id: 6,
-        icon: "upload",
+        icon: "seo",
         duration: "2 horas",
         text: "Sesión 6",
+        value:
+          "Estrategia SEO y rendimiento del sitio web. Introducción a la accesibilidad.",
+      },
+      {
+        id: 7,
+        icon: "upload",
+        duration: "2 horas",
+        text: "Sesión 7",
         value:
           "Publicación del sitio web y finalización del curso. Despliega tu sitio web.",
       },
       {
-        id: 7,
+        id: 8,
         icon: "group",
         text: "¿Listo para empezar?",
         value:
@@ -172,14 +188,22 @@ export const PAGES_SYLLABUS = {
       },
       {
         id: 6,
-        icon: "upload",
+        icon: "seo",
         duration: "2 hores",
         text: "Sessió 6",
+        value:
+          "Estratègia SEO i rendiment del lloc web. Introducció a l'accessibilitat.",
+      },
+      {
+        id: 7,
+        icon: "upload",
+        duration: "2 hores",
+        text: "Sessió 7",
         value:
           "Publicació del lloc web i finalització del curs. Desplega el teu lloc web.",
       },
       {
-        id: 7,
+        id: 8,
         icon: "group",
         text: "Preparat per començar?",
         value:

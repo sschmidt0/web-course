@@ -4,4 +4,5 @@ export interface IconListItemModel {
   icon: string;
   text: string;
   value: string;
+  value2?: string;
 }

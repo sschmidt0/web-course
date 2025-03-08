@@ -22,10 +22,15 @@
 }
 
 .list-item {
-  width: 200px;
-  min-height: 100px;
+  width: 100%;
+  min-height: 70px;
   margin-bottom: 6px;
   padding: 20px;
   border-radius: 20px;
   background-color: $light-white;
+
+  @media screen and (min-width: 600px) {
+    width: 200px;
+    min-height: 100px;
+  }
 }

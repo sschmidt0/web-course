@@ -1,12 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import { IconListItemModel } from "../../common/model";
-import { InfoBox, Title, Button, ArrayText } from "../../components";
-import { IconList } from "../../components/organisms/icon-list/icon-list";
+import {
+  InfoBox,
+  Title,
+  Button,
+  ArrayText,
+  IconList,
+  InfoBoxList,
+} from "../../components";
 import { PAGES_HOME } from "../../db/intro";
 import styles from "./intro.module.scss";
 import { useLanguageStore } from "../../store";
 import { isSmallScreen } from "../../common/helper";
-import { OverViewItems } from "./components/overview-items";
 
 export const Intro = () => {
   const { language } = useLanguageStore();
@@ -16,10 +21,13 @@ export const Intro = () => {
   const content = PAGES_HOME[language].pageIntro;
   const firstBlockItems = content.firstBlock
     .items as unknown as IconListItemModel[];
+  const firstBlockTitle = content.firstBlock.title;
   const secondBlockItems = content.secondBlock
     .items as unknown as IconListItemModel[];
+  const secondBlockTitle = content.secondBlock.title;
   const thirdBlockItems = content.thirdBlock
     .items as unknown as IconListItemModel[];
+  const thirdBlockTitle = content.thirdBlock.title;
 
   const handleCtaClick = () => {
     navigate("/contact");
@@ -34,13 +42,17 @@ export const Intro = () => {
       <ArrayText className={styles.text} textos={content.textos} withBold />
       <IconList
         className={styles["list-margin"]}
-        title={content.firstBlock.title}
+        title={firstBlockTitle}
         items={firstBlockItems}
       />
-      <OverViewItems items={secondBlockItems} />
+      <InfoBoxList
+        className={styles.items}
+        items={secondBlockItems}
+        title={secondBlockTitle}
+      />
       <IconList
         className={styles["list-margin"]}
-        title={content.thirdBlock.title}
+        title={thirdBlockTitle}
         items={thirdBlockItems}
       />
       {isMobile && (

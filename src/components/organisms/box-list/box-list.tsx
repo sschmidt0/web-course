@@ -1,7 +1,6 @@
 import React from "react";
-
-import styles from "./box-list.module.scss";
 import { BoxListItem } from "../../molecules";
+import styles from "./box-list.module.scss";
 
 export interface BoxListProps {
   content: { title: string; content: string[] }[];
@@ -13,6 +12,7 @@ export const BoxList: React.FC<BoxListProps> = ({ content }) => {
       {content.map((objective) => (
         <BoxListItem
           key={objective.title}
+          className={styles["list-item"]}
           content={objective.content}
           title={objective.title}
         />

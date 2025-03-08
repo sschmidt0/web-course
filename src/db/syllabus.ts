@@ -31,7 +31,7 @@ export const PAGES_SYLLABUS = {
       },
       {
         id: 4,
-        icon: "js",
+        icon: "javascript",
         duration: "2 hours",
         text: "Session 4",
         value:
@@ -101,7 +101,7 @@ export const PAGES_SYLLABUS = {
       },
       {
         id: 4,
-        icon: "js",
+        icon: "javascript",
         duration: "2 horas",
         text: "Sesión 4",
         value:
@@ -172,7 +172,7 @@ export const PAGES_SYLLABUS = {
       },
       {
         id: 4,
-        icon: "js",
+        icon: "javascript",
         duration: "2 hores",
         text: "Sessió 4",
         value:

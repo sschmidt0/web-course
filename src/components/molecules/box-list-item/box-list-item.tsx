@@ -4,15 +4,20 @@ import { IconBox } from "../../atoms";
 import { APP_ICONS } from "../../../common/app-icons";
 
 export interface BoxListItemProps {
-  title: string;
+  className?: string;
   content: string[];
+  title: string;
 }
 
-export const BoxListItem: React.FC<BoxListItemProps> = ({ content, title }) => {
+export const BoxListItem: React.FC<BoxListItemProps> = ({
+  className,
+  content,
+  title,
+}) => {
   const itemIcon = APP_ICONS["construction" as keyof typeof APP_ICONS];
 
   return (
-    <li>
+    <li className={className}>
       <div className={styles["title-container"]}>
         <IconBox icon={itemIcon} />
         <h4 className={styles.title}>{title}</h4>

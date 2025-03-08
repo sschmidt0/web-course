@@ -1,7 +1,7 @@
 export const PAGE_ABOUT = {
   english: {
     title: "About me",
-    author: [
+    firstBlock: [
       {
         id: 1,
         text: "Hello 👋. My name is Sarah Schmidt, and I am a Frontend developer with over 3 years of experience in web development. In addition, I have worked for over 10 years as a language teacher, including 6.5 years as a German teacher at the University of Barcelona.",
@@ -18,7 +18,7 @@ export const PAGE_ABOUT = {
   },
   spanish: {
     title: "Sobre mí",
-    author: [
+    firstBlock: [
       {
         id: 1,
         text: "Hola 👋. Me llamo Sarah Schmidt y soy programadora Frontend con más de 3 años de experiencia en desarrollo web. Además, he trabajado durante más de 10 años como profesora de lenguas, incluyendo 6,5 años como profesora de alemán en la Universitat de Barcelona.",
@@ -35,7 +35,7 @@ export const PAGE_ABOUT = {
   },
   catalan: {
     title: "Sobre mi",
-    author: [
+    firstBlock: [
       {
         id: 1,
         text: "Hola 👋. Em dic Sarah Schmidt i sóc programadora Frontend amb més de 3 anys d’experiència en desenvolupament web. A més, he treballat durant més de 10 anys com a professora de llengües, incloent-hi 6,5 anys com a professora d’alemany a la Universitat de Barcelona.",

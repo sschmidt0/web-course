@@ -11,6 +11,7 @@ export const Picture: React.FC = () => {
         width={240}
         height={300}
         alt="Sarah Schmidt"
+        priority
       />
     </div>
   );

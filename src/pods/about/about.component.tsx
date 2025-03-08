@@ -15,7 +15,10 @@ export const About: React.FC = () => {
       <Title text={title} />
       <div className={styles["intro-container"]}>
         <Picture />
-        <ArrayText textos={content.author} />
+        <ArrayText
+          className={styles["author-text"]}
+          textos={content.firstBlock}
+        />
       </div>
     </div>
   );

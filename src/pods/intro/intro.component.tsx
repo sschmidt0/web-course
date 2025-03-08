@@ -46,7 +46,8 @@ export const Intro = () => {
         items={firstBlockItems}
       />
       <InfoBoxList
-        className={styles.items}
+        className={styles["info-box"]}
+        itemStyles={styles.items}
         items={secondBlockItems}
         title={secondBlockTitle}
       />

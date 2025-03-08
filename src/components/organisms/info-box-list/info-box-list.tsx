@@ -6,22 +6,24 @@ import styles from "./info-box-list.module.scss";
 export interface InfoBoxListProps {
   className?: string;
   items: IconListItemModel[];
+  itemStyles?: string;
   title: string;
 }
 
 export const InfoBoxList: React.FC<InfoBoxListProps> = ({
   className,
   items,
+  itemStyles,
   title,
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={className}>
       <h2>{title}</h2>
       <div className={styles["item-container"]}>
         {items.map((item) => (
           <InfoBox
             key={item.id}
-            className={className}
+            className={itemStyles}
             text={item.value}
             title={item.text}
             icon={item.icon}

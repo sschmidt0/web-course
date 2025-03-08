@@ -8,7 +8,7 @@ export const PAGE_CONTACT = {
         "Do you have questions about the course? Send me a message and I'll get back to you within 24 hours.",
     },
     form: {
-      name: "Name",
+      username: "Name",
       placeholderName: "Enter your full name",
       email: "Email",
       placeholderEmail: "Enter your email address",
@@ -28,7 +28,7 @@ export const PAGE_CONTACT = {
         "¿Tienes preguntas sobre el curso? Envíame un mensaje y te responderé en un plazo de 24 horas.",
     },
     form: {
-      name: "Nombre",
+      username: "Nombre",
       placeholderName: "Introduce tu nombre completo",
       email: "Correo electrónico",
       placeholderEmail: "Introduce tu dirección de correo",
@@ -48,7 +48,7 @@ export const PAGE_CONTACT = {
         "Tens preguntes sobre el curs? Envia'm un missatge i et respondré en un termini de 24 hores.",
     },
     form: {
-      name: "Nom",
+      username: "Nom",
       placeholderName: "Introdueix el teu nom complet",
       email: "Correu electrònic",
       placeholderEmail: "Introdueix la teva adreça de correu",

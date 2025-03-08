@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./array-text.module.scss";
+import cx from "classnames";
 
 export interface ArrayTextProps {
   className?: string;
@@ -12,7 +14,7 @@ export const ArrayText: React.FC<ArrayTextProps> = ({
   withBold,
 }) => {
   return (
-    <div className={className}>
+    <div className={cx(styles.container, className)}>
       {textos.map((text) => {
         const isBold = withBold && (text.id === 1 || text.id === textos.length);
         return (

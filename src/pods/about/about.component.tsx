@@ -3,6 +3,7 @@ import { ArrayText, Title } from "@/components";
 import { PAGE_ABOUT } from "@/db/about";
 import { useLanguageStore } from "@/store";
 import { Picture } from "./components/picture";
+import styles from "./about.module.scss";
 
 export const About: React.FC = () => {
   const { language } = useLanguageStore();
@@ -10,9 +11,9 @@ export const About: React.FC = () => {
   const title = content.title;
 
   return (
-    <div>
+    <div className={styles.container}>
       <Title text={title} />
-      <div>
+      <div className={styles["intro-container"]}>
         <Picture />
         <ArrayText textos={content.author} />
       </div>

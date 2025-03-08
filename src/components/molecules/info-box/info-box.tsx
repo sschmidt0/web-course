@@ -1,5 +1,5 @@
 import React from "react";
-import classNames from "classnames";
+import cx from "classnames";
 import styles from "./info-box.module.scss";
 import { APP_ICONS } from "../../../common/app-icons";
 import { IconBox } from "../../atoms";
@@ -24,7 +24,7 @@ export const InfoBox: React.FC<InfoBoxProps> = ({
   const itemIcon = APP_ICONS[icon as keyof typeof APP_ICONS];
 
   return (
-    <div className={classNames(styles.container, className)}>
+    <div className={cx(styles.container, className)}>
       {icon && <IconBox icon={itemIcon} />}
       {duration && <p className={styles.duration}>{duration}</p>}
       <h3 className={styles.title}>{title}</h3>

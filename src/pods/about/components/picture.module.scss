@@ -2,11 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 180px;
+  height: auto;
   overflow: hidden;
+
+  @media screen and (min-width: 500px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
 }
 
 .image {
   width: 100%;
   height: auto;
+  border-radius: 146px;
 }

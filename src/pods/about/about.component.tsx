@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrayText, InfoBoxList, Title } from "@/components";
+import { ArrayText, InfoBoxList, Title, UnderlineList } from "@/components";
 import { PAGE_ABOUT } from "@/db/about";
 import { useLanguageStore } from "@/store";
 import { Picture } from "./components/picture";
@@ -12,6 +12,12 @@ export const About: React.FC = () => {
   const firstBlockItems = content.firstBlock;
   const secondBlockTitle = content.secondBlock.title;
   const secondBlockItems = content.secondBlock.items;
+  const thirdBlockTitle = content.thirdBlock.title;
+  const thirdBlockItems = content.thirdBlock.items;
+  const thirdBlockIcon = content.thirdBlock.icon;
+  const fourthBlockTitle = content.fourthBlock.title;
+  const fourthBlockItems = content.fourthBlock.items;
+  const fourthBlockIcon = content.fourthBlock.icon;
 
   return (
     <div className={styles.container}>
@@ -25,6 +31,18 @@ export const About: React.FC = () => {
         title={secondBlockTitle}
         items={secondBlockItems}
       />
+      <div className={styles["underline-container"]}>
+        <UnderlineList
+          title={thirdBlockTitle}
+          icon={thirdBlockIcon}
+          items={thirdBlockItems}
+        />
+        <UnderlineList
+          title={fourthBlockTitle}
+          icon={fourthBlockIcon}
+          items={fourthBlockItems}
+        />
+      </div>
     </div>
   );
 };

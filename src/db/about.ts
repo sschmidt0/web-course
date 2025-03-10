@@ -34,6 +34,78 @@ export const PAGE_ABOUT = {
         },
       ],
     },
+    thirdBlock: {
+      title: "Professional experience",
+      icon: "code",
+      items: [
+        {
+          id: 1,
+          text: "Frontend Engineer at adesso Spain",
+          years: "07/2024 - present",
+        },
+        {
+          id: 2,
+          text: "Frontend Engineer at Volkswagen Digital Hub",
+          years: "06/2023 - 07/2024",
+        },
+        {
+          id: 3,
+          text: "Frontend Developer at Seat:Code",
+          years: "06/2022 - 06/2023",
+        },
+        {
+          id: 4,
+          text: "Frontend with React at Flykube",
+          years: "01/2022 - 06/2022",
+        },
+        {
+          id: 5,
+          text: "Data Modeler at M47 Labs",
+          years: "04/2019 - 01/2022",
+        },
+        {
+          id: 6,
+          text: "German teacher at the University of Barcelona",
+          years: "2013 - 04/2019",
+        },
+      ],
+    },
+    fourthBlock: {
+      title: "Education",
+      icon: "school",
+      items: [
+        {
+          id: 1,
+          text: "Master's Degree in Multimedia Applications at the Open University of Catalonia",
+          years: "2018 - 2021",
+        },
+        {
+          id: 2,
+          text: "Front End Continuous Master at Lemoncoders",
+          years: "2023",
+        },
+        {
+          id: 3,
+          text: "Frontend with React at IT Academy",
+          years: "2021",
+        },
+        {
+          id: 4,
+          text: "PhD in Spanish Philology at the Autonomous University of Barcelona",
+          years: "2009 - 2013",
+        },
+        {
+          id: 5,
+          text: "Master's Degree in Information Processing and Multilingual Communication at the Autonomous University of Barcelona",
+          years: "2008 - 2009",
+        },
+        {
+          id: 6,
+          text: "English Philology and Spanish Philology at the University of Duisburg-Essen (Germany)",
+          years: "2004 - 2008",
+        },
+      ],
+    },
   },
   spanish: {
     title: "Sobre mí",
@@ -70,6 +142,78 @@ export const PAGE_ABOUT = {
         },
       ],
     },
+    thirdBlock: {
+      title: "Experiencia profesional",
+      icon: "code",
+      items: [
+        {
+          id: 1,
+          text: "Frontend Engineer en adesso Spain",
+          years: "07/2024 - actualidad",
+        },
+        {
+          id: 2,
+          text: "Frontend Engineer en Volkswagen Digital Hub",
+          years: "06/2023 - 07/2024",
+        },
+        {
+          id: 3,
+          text: "Frontend Developer en Seat:Code",
+          years: "06/2022 - 06/2023",
+        },
+        {
+          id: 4,
+          text: "Frontend con React en Flykube",
+          years: "01/2022 - 06/2022",
+        },
+        {
+          id: 5,
+          text: "Data Modeler en M47 Labs",
+          years: "04/2019 - 01/2022",
+        },
+        {
+          id: 6,
+          text: "Profesora de alemán en la Universitat de Barcelona",
+          years: "2013 - 04/2019",
+        },
+      ],
+    },
+    fourthBlock: {
+      title: "Educación",
+      icon: "school",
+      items: [
+        {
+          id: 1,
+          text: "Máster Universitario en Aplicaciones Multimedia en Universitat Oberta de Catalunya",
+          years: "2018 - 2021",
+        },
+        {
+          id: 2,
+          text: "Máster Front End Continuo en Lemoncoders",
+          years: "2023",
+        },
+        {
+          id: 3,
+          text: "Frontend con React en IT Academy",
+          years: "2021",
+        },
+        {
+          id: 4,
+          text: "Doctorado en Filología Española en Universitat Autònoma de Barcelona",
+          years: "2009 - 2013",
+        },
+        {
+          id: 5,
+          text: "Máster en Tratamiento de la información y comunicación multilingüe en Universitat Autònoma de Barcelona",
+          years: "2008 - 2009",
+        },
+        {
+          id: 6,
+          text: "Filología Inglesa y Filología Española en Universidad Duisburg-Essen (Alemania)",
+          years: "2004 - 2008",
+        },
+      ],
+    },
   },
   catalan: {
     title: "Sobre mi",
@@ -103,6 +247,78 @@ export const PAGE_ABOUT = {
           text: "Educació",
           value:
             "Professora d'idiomes a diverses universitats durant molts anys (UB, UOC, ESCI UPF), cursos presencials i online, examen estatal per a professorat (1. Staatsexamen)",
+        },
+      ],
+    },
+    thirdBlock: {
+      title: "Experiència professional",
+      icon: "code",
+      items: [
+        {
+          id: 1,
+          text: "Frontend Engineer a adesso Spain",
+          years: "07/2024 - actualitat",
+        },
+        {
+          id: 2,
+          text: "Frontend Engineer a Volkswagen Digital Hub",
+          years: "06/2023 - 07/2024",
+        },
+        {
+          id: 3,
+          text: "Frontend Developer a Seat:Code",
+          years: "06/2022 - 06/2023",
+        },
+        {
+          id: 4,
+          text: "Frontend amb React a Flykube",
+          years: "01/2022 - 06/2022",
+        },
+        {
+          id: 5,
+          text: "Data Modeler a M47 Labs",
+          years: "04/2019 - 01/2022",
+        },
+        {
+          id: 6,
+          text: "Professora d'alemany a la Universitat de Barcelona",
+          years: "2013 - 04/2019",
+        },
+      ],
+    },
+    fourthBlock: {
+      title: "Educació",
+      icon: "school",
+      items: [
+        {
+          id: 1,
+          text: "Màster Universitari en Aplicacions Multimèdia a la Universitat Oberta de Catalunya",
+          years: "2018 - 2021",
+        },
+        {
+          id: 2,
+          text: "Màster Front End Continu a Lemoncoders",
+          years: "2023",
+        },
+        {
+          id: 3,
+          text: "Frontend amb React a IT Academy",
+          years: "2021",
+        },
+        {
+          id: 4,
+          text: "Doctorat en Filologia Espanyola a la Universitat Autònoma de Barcelona",
+          years: "2009 - 2013",
+        },
+        {
+          id: 5,
+          text: "Màster en Tractament de la informació i comunicació multilingüe a la Universitat Autònoma de Barcelona",
+          years: "2008 - 2009",
+        },
+        {
+          id: 6,
+          text: "Filologia Anglesa i Filologia Espanyola a la Universitat Duisburg-Essen (Alemanya)",
+          years: "2004 - 2008",
         },
       ],
     },

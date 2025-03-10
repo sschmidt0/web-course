@@ -57,3 +57,21 @@
     width: 46%;
   }
 }
+
+.underline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & > div {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+
+    & > div {
+      width: 50%;
+    }
+  }
+}

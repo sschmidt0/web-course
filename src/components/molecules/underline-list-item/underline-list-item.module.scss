@@ -2,28 +2,14 @@
 
 .container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 12px;
   padding: 8px 0;
-  border-bottom: 1px solid $light-grey;
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  color: $tertiary;
-  background-color: $light-white;
-  border-radius: 16px;
-}
-
-.innerContainer {
-  display: flex;
-  width: 100%;
-
-  & > div {
-    width: 50%;
-  }
+.coloured-div {
+  margin-top: -12px;
+  color: $primary;
+  font-size: 0.7rem;
 }

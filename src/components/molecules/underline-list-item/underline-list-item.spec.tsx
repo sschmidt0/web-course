@@ -10,19 +10,21 @@ describe("UnderlineListItem", () => {
 
   beforeEach(() => {
     props = {
-      icon: "sampleIcon",
-      text: "Sample Text",
-      value: "Sample Value",
+      item: {
+        id: 1,
+        text: "Sample Text",
+        years: "2025",
+      },
     };
   });
 
   it("renders correctly with given props", () => {
     render(<UnderlineListItem {...props} />);
 
-    const textElement = screen.getByText(props.text);
-    const valueElement = screen.getByText(props.value);
+    const textElement = screen.getByText(props.item.text);
+    const yearsElement = screen.getByText(props.item.years);
 
     expect(textElement).toBeInTheDocument();
-    expect(valueElement).toBeInTheDocument();
+    expect(yearsElement).toBeInTheDocument();
   });
 });

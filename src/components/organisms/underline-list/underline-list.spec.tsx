@@ -8,9 +8,10 @@ describe("UnderlineList", () => {
   beforeEach(() => {
     props = {
       title: "Sample Title",
+      icon: "sampleIcon1",
       items: [
-        { icon: "sampleIcon1", text: "Sample Text 1", value: "Sample Value 1" },
-        { icon: "sampleIcon2", text: "Sample Text 2", value: "Sample Value 2" },
+        { id: 1, text: "Sample Text 1", years: "2025" },
+        { id: 2, text: "Sample Text 2", years: "2024" },
       ],
     };
   });
@@ -19,9 +20,9 @@ describe("UnderlineList", () => {
 
     const titleElement = screen.getByText("Sample Title");
     const item1TextElement = screen.getByText("Sample Text 1");
-    const item1ValueElement = screen.getByText("Sample Value 1");
+    const item1ValueElement = screen.getByText("2025");
     const item2TextElement = screen.getByText("Sample Text 2");
-    const item2ValueElement = screen.getByText("Sample Value 2");
+    const item2ValueElement = screen.getByText("2024");
 
     expect(titleElement).toBeInTheDocument();
     expect(item1TextElement).toBeInTheDocument();

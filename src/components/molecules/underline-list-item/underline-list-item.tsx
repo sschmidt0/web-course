@@ -1,24 +1,18 @@
 import React from "react";
+import { UnderlineListProps } from "@/components/organisms";
 import styles from "./underline-list-item.module.scss";
-import { IconListItemModel } from "../../../common/model";
-import { APP_ICONS } from "../../../common/app-icons";
 
-export type UnderlineListItemProps = IconListItemModel;
+export interface UnderlineListItemProps {
+  item: UnderlineListProps["items"][number];
+}
 
 export const UnderlineListItem: React.FC<UnderlineListItemProps> = ({
-  icon,
-  text,
-  value,
+  item,
 }) => {
-  const itemIcon = APP_ICONS[icon as keyof typeof APP_ICONS];
-
   return (
     <div className={styles.container}>
-      <div className={styles.icon}>{itemIcon}</div>
-      <div className={styles.innerContainer}>
-        <div>{text}</div>
-        <div>{value}</div>
-      </div>
+      <div>{item.text}</div>
+      <div className={styles["coloured-div"]}>{item.years}</div>
     </div>
   );
 };

@@ -1,4 +1,11 @@
-import { FaUserGroup, FaStar, FaLaptop, FaCode } from "react-icons/fa6";
+import {
+  FaUserGroup,
+  FaStar,
+  FaLaptop,
+  FaCode,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa6";
 import { FaClipboardList, FaHome } from "react-icons/fa";
 import {
   MdSchedule,
@@ -22,11 +29,13 @@ type IconType =
   | "construction"
   | "css"
   | "done"
+  | "github"
   | "group"
   | "home"
   | "html"
   | "javascript"
   | "laptop"
+  | "linkedin"
   | "location"
   | "menu-close"
   | "menu-open"
@@ -45,11 +54,13 @@ export const APP_ICONS: Record<IconType, React.ReactNode> = {
   construction: <MdOutlineConstruction />,
   css: <MdOutlineCss />,
   done: <BsFillPatchCheckFill />,
+  github: <FaGithub />,
   group: <FaUserGroup />,
   home: <FaHome />,
   html: <MdOutlineHtml />,
   javascript: <MdOutlineJavascript />,
   laptop: <FaLaptop />,
+  linkedin: <FaLinkedin />,
   location: <MdLocationOn />,
   "menu-close": <IoMdClose />,
   "menu-open": <FiMenu />,

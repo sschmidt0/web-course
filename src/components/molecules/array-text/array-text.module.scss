@@ -1,5 +1,21 @@
+@import "@/assets/scss/colours.scss";
+
 .container {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  color: $primary;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

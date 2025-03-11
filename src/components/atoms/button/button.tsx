@@ -27,6 +27,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
+      aria-label={text}
       onClick={handleClick}
       className={[styles.button, secondary && styles.secondary, className].join(
         " "

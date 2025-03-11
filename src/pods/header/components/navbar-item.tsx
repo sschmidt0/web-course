@@ -1,7 +1,7 @@
 import React from "react";
-
+import { usePathname } from "next/navigation";
 import styles from "./navbar-item.module.scss";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
 
 export interface NavbarItemProps {
   text: string;
@@ -9,13 +9,12 @@ export interface NavbarItemProps {
 }
 
 export const NavbarItem: React.FC<NavbarItemProps> = ({ route, text }) => {
-  const location = useLocation();
-  const { pathname } = location;
+  const pathname = usePathname();
   const isActiveRoute = pathname === route;
 
   return (
     <li className={isActiveRoute ? styles["item-active"] : styles.item}>
-      <Link to={route}>{text}</Link>
+      <Link href={route}>{text}</Link>
     </li>
   );
 };

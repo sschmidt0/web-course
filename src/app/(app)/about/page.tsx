@@ -1,5 +1,5 @@
 import { AboutContainer } from "@/pods/about";
 
-export const AboutScreen = () => {
+export default function AboutPage() {
   return <AboutContainer />;
-};
+}

@@ -12,7 +12,7 @@ export const TitleDescriptionList: React.FC<TitleDescriptionListProps> = ({
 }) => {
   return (
     <ul className={styles.list}>
-      {content.map((objective) => (
+      {content?.map((objective) => (
         <ListItem
           key={objective.title}
           title={objective.title}

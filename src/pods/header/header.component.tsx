@@ -1,10 +1,13 @@
-import { isSmallScreen } from "../../common/helper";
+"use client";
+
+import React from "react";
+import { isSmallScreen } from "@/common/helper";
 import { LanguageNav } from "./components/language-nav";
 import { Navbar } from "./components/navbar";
 import { NavbarMobileIcon } from "./components/navbar-mobile-icon";
 import styles from "./header.module.scss";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const showNavbarMobile = isSmallScreen();
 
   return (

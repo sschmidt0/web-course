@@ -9,6 +9,8 @@ import { Title, InfoBox, TitleDescriptionList, BoxList } from "@/components";
 import { Notes } from "./components/notes";
 import { IconListItemModel } from "@/common/model";
 import styles from "./detail.module.scss";
+import { Breadcrumb } from "./components/breadcrumb";
+import { SYLLABUS_ITEM } from "@/db/navbar";
 
 export const Detail: React.FC = () => {
   const params = useParams();
@@ -21,9 +23,11 @@ export const Detail: React.FC = () => {
   const practicalExercises = pageContent?.practicalExercises;
   const notes = PAGE_DETAIL_COURSE[language]?.notes;
   const item = itemContent.items?.[id] as IconListItemModel;
+  const syllabusText = SYLLABUS_ITEM[language];
 
   return (
     <div className={styles.container}>
+      <Breadcrumb session={item?.text} syllabusText={syllabusText} />
       <Title text={title} />
       <div className={styles["item-container"]}>
         <InfoBox

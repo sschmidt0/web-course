@@ -1,21 +1,24 @@
-import { useNavigate } from "react-router-dom";
-import { IconListItemModel } from "../../common/model";
+"use client";
+
+import React from "react";
+import { useRouter } from "next/navigation";
+import { PAGES_HOME } from "@/db/intro";
+import { useLanguageStore } from "@/store";
 import {
-  InfoBox,
   Title,
+  InfoBox,
   Button,
   ArrayText,
   IconList,
   InfoBoxList,
-} from "../../components";
-import { PAGES_HOME } from "../../db/intro";
+} from "@/components";
+import { IconListItemModel } from "@/common/model";
+import { isSmallScreen } from "@/common/helper";
 import styles from "./intro.module.scss";
-import { useLanguageStore } from "../../store";
-import { isSmallScreen } from "../../common/helper";
 
-export const Intro = () => {
+export const Intro: React.FC = () => {
   const { language } = useLanguageStore();
-  const navigate = useNavigate();
+  const router = useRouter();
   const isMobile = isSmallScreen();
 
   const content = PAGES_HOME[language].pageIntro;
@@ -30,7 +33,7 @@ export const Intro = () => {
   const thirdBlockTitle = content.thirdBlock.title;
 
   const handleCtaClick = () => {
-    navigate("/contact");
+    router.push("/contact");
   };
 
   return (

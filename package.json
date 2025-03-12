@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.2",
+    "@next/third-parties": "^15.2.2",
     "@react-email/components": "^0.0.33",
     "classnames": "^2.5.1",
     "framer-motion": "^12.4.7",

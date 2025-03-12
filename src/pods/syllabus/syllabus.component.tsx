@@ -1,13 +1,16 @@
-import { IconListItemModel } from "../../common/model";
-import { Button, InfoBox, Title } from "../../components";
-import { useActiveSessionStore, useLanguageStore } from "../../store";
-import { PAGES_SYLLABUS } from "../../db/syllabus";
-import styles from "./syllabus.module.scss";
-import { useNavigate } from "react-router-dom";
-import { isSmallScreen } from "../../common/helper";
+"use client";
 
-export const Syllabus = () => {
-  const navigate = useNavigate();
+import React from "react";
+import { useRouter } from "next/navigation";
+import { PAGES_SYLLABUS } from "@/db/syllabus";
+import { useActiveSessionStore, useLanguageStore } from "@/store";
+import { Button, InfoBox, Title } from "@/components";
+import { IconListItemModel } from "@/common/model";
+import { isSmallScreen } from "@/common/helper";
+import styles from "./syllabus.module.scss";
+
+export const Syllabus: React.FC = () => {
+  const router = useRouter();
   const { language } = useLanguageStore();
   const { setSessionIndex } = useActiveSessionStore();
   const isMobile = isSmallScreen();
@@ -17,13 +20,13 @@ export const Syllabus = () => {
   const lastItem = items.length - 1;
 
   const handleCtaClick = () => {
-    navigate("/contact");
+    router.push("/contact");
   };
 
   const handleClickDetails = (id: number) => {
     const newId = id - 1;
     setSessionIndex(newId);
-    navigate("/details", { state: { id: newId } });
+    router.push(`/details/${newId}`);
   };
 
   return (
@@ -36,9 +39,8 @@ export const Syllabus = () => {
         {items.map((item) => {
           if (items.indexOf(item) === lastItem) {
             return (
-              <>
+              <React.Fragment key={item.icon.toString()}>
                 <InfoBox
-                  key={item.icon.toString()}
                   duration={item.duration}
                   icon={item.icon}
                   text={item.value}
@@ -51,7 +53,7 @@ export const Syllabus = () => {
                     onClick={handleCtaClick}
                   />
                 )}
-              </>
+              </React.Fragment>
             );
           }
 

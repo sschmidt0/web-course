@@ -1,5 +1,9 @@
 export const isSmallScreen = () => {
-  const width = window.innerWidth;
+  if (typeof window !== "undefined") {
+    const width = window.innerWidth;
 
-  return width < 555;
+    return width < 555;
+  }
+
+  return false;
 };

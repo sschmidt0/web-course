@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { HeaderContainer } from "@/pods/header";
 import styles from "./layout.module.scss";
 import "./global.styles.scss";
@@ -15,6 +16,9 @@ export default function RootLayout({
           {children}
         </div>
         <div id="portal"></div>
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID ?? ""}
+        />
       </body>
     </html>
   );

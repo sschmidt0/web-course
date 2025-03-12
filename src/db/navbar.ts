@@ -43,7 +43,7 @@ const HOME_ITEM = {
   spanish: "Inicio",
 };
 
-const SYLLABUS_ITEM = {
+export const SYLLABUS_ITEM = {
   english: "Syllabus",
   catalan: "Programa",
   spanish: "Programa",

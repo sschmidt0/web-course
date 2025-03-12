@@ -7,11 +7,15 @@ import styles from "./form.module.scss";
 import { ContactFormValues, contactSchema } from "../../../common/schemas";
 import { useSendEmail } from "../contact.hook";
 
+import { useLanguageStore } from "@/store";
+
 export interface FormProps {
   form: FormModel;
 }
 
 export const Form: React.FC<FormProps> = ({ form }) => {
+  const { language } = useLanguageStore();
+
   const {
     formState: { errors, isSubmitting },
     handleSubmit,
@@ -23,7 +27,7 @@ export const Form: React.FC<FormProps> = ({ form }) => {
 
   const onSubmit = async (data: ContactFormValues) => {
     try {
-      await sendEmail(data);
+      await sendEmail(data, language);
     } catch (error) {
       console.log("Error sending email:", error);
     } finally {

@@ -1,3 +1,5 @@
+"use client";
+
 import { useMenuStore } from "@/store";
 import { MenuBox } from "./menu-box.component";
 

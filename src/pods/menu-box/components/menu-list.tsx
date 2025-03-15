@@ -5,13 +5,14 @@ import { useLanguageStore, useMenuStore } from "../../../store";
 import styles from "./menu-list.module.scss";
 import { useOutsideClick } from "../../../common/hooks";
 import { APP_ICONS } from "../../../common/app-icons";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { usePathname } from "next/navigation";
 
 export const MenuList = () => {
   const menuRef = React.useRef<HTMLDivElement | null>(null);
   const { language } = useLanguageStore();
   const { isOpen, setIsOpen } = useMenuStore();
-  const { pathname } = useLocation();
+  const pathname = usePathname();
 
   const handleChangeOpen = () => {
     setIsOpen(!isOpen);

@@ -5,8 +5,9 @@ import { useLanguageStore, useMenuStore } from "../../../store";
 import styles from "./menu-list.module.scss";
 import { useOutsideClick } from "../../../common/hooks";
 import { APP_ICONS } from "../../../common/app-icons";
-import { Link } from "react-router-dom";
+
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export const MenuList = () => {
   const menuRef = React.useRef<HTMLDivElement | null>(null);
@@ -47,7 +48,7 @@ export const MenuList = () => {
           return (
             <li key={item.id} className={styles.item}>
               <Link
-                to={item.route}
+                href={item.route}
                 className={styles.link}
                 style={isActiveRoute ? { color: "#0b062e" } : undefined}
                 onClick={handleClick}

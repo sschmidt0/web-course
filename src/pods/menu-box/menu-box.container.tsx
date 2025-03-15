@@ -1,5 +1,7 @@
+import { useMenuStore } from "@/store";
 import { MenuBox } from "./menu-box.component";
 
 export const MenuBoxContainer = () => {
-  return <MenuBox />;
+  const { isOpen } = useMenuStore();
+  return isOpen ? <MenuBox /> : null;
 };

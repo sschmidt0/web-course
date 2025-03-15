@@ -1,0 +1,7 @@
+.icon {
+  display: block;
+
+  @media screen and (min-width: 555px) {
+    display: none;
+  }
+}

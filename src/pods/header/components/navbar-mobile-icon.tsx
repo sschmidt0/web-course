@@ -1,6 +1,7 @@
-import { APP_ICONS } from "../../../common/app-icons";
-import { MenuButton } from "../../../components";
-import { useMenuStore } from "../../../store";
+import { APP_ICONS } from "@/common/app-icons";
+import { MenuButton } from "@/components";
+import { useMenuStore } from "@/store";
+import styles from "./navbar-mobile-icon.module.scss";
 
 export const NavbarMobileIcon = () => {
   const { isOpen, setIsOpen } = useMenuStore();
@@ -12,7 +13,7 @@ export const NavbarMobileIcon = () => {
   };
 
   return (
-    <div>
+    <div className={styles.icon}>
       {isOpen ? (
         <MenuButton icon={closeIcon} onClick={handleClick} />
       ) : (

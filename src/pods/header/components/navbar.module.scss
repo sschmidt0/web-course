@@ -1,4 +1,12 @@
 .container {
+  display: none;
+
+  @media screen and (min-width: 555px) {
+    display: block;
+  }
+}
+
+.list-container {
   display: flex;
   margin: 0;
   padding: 0;

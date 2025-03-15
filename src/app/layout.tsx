@@ -15,7 +15,6 @@ export default function RootLayout({
           <HeaderContainer />
           {children}
         </div>
-        <div id="portal"></div>
         <GoogleAnalytics
           gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID ?? ""}
         />

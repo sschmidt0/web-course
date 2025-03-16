@@ -19,6 +19,7 @@
     "classnames": "^2.5.1",
     "framer-motion": "^12.4.7",
     "next": "15.2.0",
+    "nextjs-toast-notify": "^1.35.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-email": "^3.0.7",

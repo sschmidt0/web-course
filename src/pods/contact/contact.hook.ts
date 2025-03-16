@@ -10,6 +10,7 @@ export const useSendEmail = () => {
   const sendEmail = async (data: ContactFormValues, language: Language) => {
     try {
       setIsSending(true);
+      setIsError(false);
 
       const params = new URLSearchParams({
         email: data.email,
@@ -25,7 +26,10 @@ export const useSendEmail = () => {
         },
       });
 
-      console.log({ response });
+      if (response.status === 400 || response.status === 500) {
+        setIsError(true);
+        return;
+      }
 
       if (response.ok) {
         setIsSuccess(true);

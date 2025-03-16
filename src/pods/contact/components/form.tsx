@@ -1,13 +1,14 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ErrorMessage, Input, Textarea } from "../../../components";
-import { FormModel } from "../../../common/model";
-import styles from "./form.module.scss";
-import { ContactFormValues, contactSchema } from "../../../common/schemas";
-import { useSendEmail } from "../contact.hook";
-
 import { useLanguageStore } from "@/store";
+import { useSendEmail } from "../contact.hook";
+import { FormModel } from "@/common/model";
+import { ContactFormValues, contactSchema } from "@/common/schemas";
+import { ErrorMessage, Input, Textarea } from "@/components";
+import { MESSAGES } from "@/db/messages";
+import { handleShowToast } from "@/common/helper/handle-show-toast";
+import styles from "./form.module.scss";
 
 export interface FormProps {
   form: FormModel;
@@ -25,19 +26,26 @@ export const Form: React.FC<FormProps> = ({ form }) => {
 
   const { isError, isSending, isSuccess, sendEmail } = useSendEmail();
 
+  const errorMessage = MESSAGES[language].error;
+  const successMessage = MESSAGES[language].success;
+
   const onSubmit = async (data: ContactFormValues) => {
     try {
       await sendEmail(data, language);
     } catch (error) {
+      if (error) handleShowToast("error", errorMessage);
       console.log("Error sending email:", error);
     } finally {
-      if (isSuccess) reset();
+      if (isSuccess) {
+        reset();
+        handleShowToast("success", successMessage);
+      }
+      if (isError) handleShowToast("error", errorMessage);
     }
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.container}>
-      {isError && <ErrorMessage message={"error sending email"} />}
       <Input
         label={form.username}
         name="username"

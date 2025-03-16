@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { type NextRequest } from "next/server";
 import SendConfirmation from "@/emails/send-confirmation";
 import { Language } from "@/common/model/language";
-import { ERROR_MESSAGES } from "@/db/error-messages";
+import { MESSAGES } from "@/db/messages";
 import { EMAIL_MESSAGE } from "@/db/email";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
@@ -14,11 +14,11 @@ export async function GET(request: NextRequest) {
   const message = searchParams.get("message") as string;
   const language = searchParams.get("language") as Language;
 
-  const errorMessage = ERROR_MESSAGES[language];
+  const errorMessage = MESSAGES[language];
   const subject = EMAIL_MESSAGE[language]?.subject;
 
   if (!message || !email || !username) {
-    return Response.json({ error: errorMessage.error400 }, { status: 400 });
+    return Response.json({ error: errorMessage.error }, { status: 400 });
   }
 
   try {
@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
 
     if (error) {
       return Response.json(
-        { message: errorMessage.error400Message, error },
+        { message: errorMessage.error, error },
         { status: 400 }
       );
     }
@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
     );
   } catch (error) {
     return Response.json(
-      { message: errorMessage.error500, error },
+      { message: errorMessage.error, error },
       { status: 500 }
     );
   }

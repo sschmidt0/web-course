@@ -1,13 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { NAV_TEXT, NAVBAR_ITEMS } from "../../../db/navbar";
-import { useLanguageStore, useMenuStore } from "../../../store";
-import styles from "./menu-list.module.scss";
-import { useOutsideClick } from "../../../common/hooks";
-import { APP_ICONS } from "../../../common/app-icons";
-
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { APP_ICONS } from "@/common/app-icons";
+import { useOutsideClick } from "@/common/hooks";
+import { NAVBAR_ITEMS, NAV_TEXT } from "@/db/navbar";
+import { useLanguageStore, useMenuStore } from "@/store";
+import styles from "./menu-list.module.scss";
 
 export const MenuList = () => {
   const menuRef = React.useRef<HTMLDivElement | null>(null);

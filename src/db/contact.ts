@@ -17,6 +17,7 @@ export const PAGE_CONTACT = {
       message: "Message",
       placeholderMessage: "Type your message here...",
       sendButton: "Send Message",
+      sendingButton: "Sending...",
     },
   },
   spanish: {
@@ -37,6 +38,7 @@ export const PAGE_CONTACT = {
       message: "Mensaje",
       placeholderMessage: "Escribe tu mensaje aquí...",
       sendButton: "Enviar mensaje",
+      sendingButton: "Enviando...",
     },
   },
   catalan: {
@@ -57,6 +59,7 @@ export const PAGE_CONTACT = {
       message: "Missatge",
       placeholderMessage: "Escriu el teu missatge aquí...",
       sendButton: "Enviar missatge",
+      sendingButton: "Enviant...",
     },
   },
 };

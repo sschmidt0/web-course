@@ -26,6 +26,9 @@ export const Form: React.FC<FormProps> = ({ form }) => {
 
   const { isError, isSending, isSuccess, sendEmail } = useSendEmail();
 
+  const buttonText = isSending ? form.sendingButton : form.sendButton;
+  const isDisabled = isSubmitting || isSending;
+
   const errorMessage = MESSAGES[language].error;
   const successMessage = MESSAGES[language].success;
 
@@ -77,16 +80,12 @@ export const Form: React.FC<FormProps> = ({ form }) => {
         <ErrorMessage message={errors.message.message} />
       )}
 
-      {isSending ? (
-        <div>sending...</div>
-      ) : (
-        <input
-          className={styles.button}
-          disabled={isSubmitting}
-          type="submit"
-          value={form.sendButton}
-        />
-      )}
+      <input
+        className={styles.button}
+        disabled={isDisabled}
+        type="submit"
+        value={buttonText}
+      />
     </form>
   );
 };

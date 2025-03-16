@@ -8,6 +8,7 @@ export interface FormModel {
   message: string;
   placeholderMessage: string;
   sendButton: string;
+  sendingButton: string;
 }
 
 export type InputType = "username" | "email" | "message";

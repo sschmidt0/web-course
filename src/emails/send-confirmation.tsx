@@ -44,8 +44,9 @@ const SendConfirmation: React.FC<Readonly<SendConfirmationProps>> = ({
           <Section style={{ paddingBottom: "20px" }}>
             <Row>
               <Text style={heading}>{title}</Text>
-              <Text style={link}>www.sarahschmidt.cat</Text>
-              <Text style={link}>www.sarahschmidt.es</Text>
+              <Text style={link}>
+                www.sarahschmidt.cat | www.sarahschmidt.es
+              </Text>
               <Text style={paragraph}>
                 {greeting} {username} 👋🏻
               </Text>

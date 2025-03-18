@@ -15,16 +15,16 @@ export async function GET(request: NextRequest) {
   const language = searchParams.get("language") as Language;
 
   const errorMessage = MESSAGES[language];
-  const subject = EMAIL_MESSAGE[language]?.subject;
+  const subject = EMAIL_MESSAGE[language]?.subject || "sarahschmidt.cat";
 
   if (!message || !email || !username) {
-    return Response.json({ error: errorMessage.error }, { status: 400 });
+    return Response.json({ error: errorMessage?.error }, { status: 400 });
   }
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Sarah Schmidt <contacte@sarahschmidt.cat>",
-      to: ["sschmidt0@uoc.edu", email],
+      from: "Sarah Schmidt <onboarding@resend.dev>",
+      to: ["sakschmidt@gmail.com", email],
       subject: subject,
       react: (await SendConfirmation({
         username,
@@ -36,18 +36,18 @@ export async function GET(request: NextRequest) {
 
     if (error) {
       return Response.json(
-        { message: errorMessage.error, error },
+        { message: errorMessage?.error, error },
         { status: 400 }
       );
     }
 
     return Response.json(
-      { message: errorMessage.success, data },
+      { message: errorMessage?.success, data },
       { status: 200 }
     );
   } catch (error) {
     return Response.json(
-      { message: errorMessage.error, error },
+      { message: errorMessage?.error, error },
       { status: 500 }
     );
   }

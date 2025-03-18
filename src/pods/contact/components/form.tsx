@@ -24,7 +24,7 @@ export const Form: React.FC<FormProps> = ({ form }) => {
     reset,
   } = useForm<ContactFormValues>({ resolver: zodResolver(contactSchema) });
 
-  const { isSending, isSuccess, sendEmail } = useSendEmail();
+  const { isError, isSending, isSuccess, sendEmail } = useSendEmail();
 
   const buttonText = isSending ? form.sendingButton : form.sendButton;
   const isDisabled = isSubmitting || isSending;
@@ -42,7 +42,8 @@ export const Form: React.FC<FormProps> = ({ form }) => {
       if (isSuccess) {
         reset();
         handleShowToast("success", successMessage);
-      } else {
+      }
+      if (isError) {
         handleShowToast("error", errorMessage);
       }
     }

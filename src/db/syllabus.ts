@@ -65,7 +65,7 @@ export const PAGES_SYLLABUS = {
         icon: "group",
         text: "Ready to start?",
         value:
-          "Join our comprehensive web development course and build your first website",
+          "Join my comprehensive web development course and build your first website",
       },
     ],
   },
@@ -136,7 +136,7 @@ export const PAGES_SYLLABUS = {
         icon: "group",
         text: "¿Listo para empezar?",
         value:
-          "Únete a nuestro curso completo de desarrollo web y crea tu primer sitio web.",
+          "Únete a mi curso completo de desarrollo web y crea tu primer sitio web.",
       },
     ],
   },
@@ -207,7 +207,7 @@ export const PAGES_SYLLABUS = {
         icon: "group",
         text: "Preparat per començar?",
         value:
-          "Uneix-te al nostre curs complet de desenvolupament web i crea el teu primer lloc web.",
+          "Uneix-te al meu curs complet de desenvolupament web i crea el teu primer lloc web.",
       },
     ],
   },

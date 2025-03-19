@@ -23,7 +23,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Sarah Schmidt <onboarding@resend.dev>",
+      from: "Sarah Schmidt <contacte@sarahschmidt.cat>",
       to: ["sakschmidt@gmail.com", email],
       subject: subject,
       react: (await SendConfirmation({

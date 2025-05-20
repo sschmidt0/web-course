@@ -5,7 +5,7 @@ export const PAGE_CONTACT = {
       icon: "send",
       text: "Get in Touch with Me",
       value:
-        "Do you have questions about the course? Send me a message and I'll get back to you within 24 hours.",
+        "Do you have questions about the course? Do you want me to implement your website? Do you need help with your website? Send me a message and I will reply within 24 hours.",
     },
     form: {
       username: "Name",
@@ -26,7 +26,7 @@ export const PAGE_CONTACT = {
       icon: "send",
       text: "Contáctame",
       value:
-        "¿Tienes preguntas sobre el curso? Envíame un mensaje y te responderé en un plazo de 24 horas.",
+        "¿Tienes preguntas sobre el curso? ¿Quieres que te implemente tu página web? ¿Necesitas ayuda puntual con tu web? Envíame un mensaje y te responderé en un plazo de 24 horas.",
     },
     form: {
       username: "Nombre",
@@ -47,7 +47,7 @@ export const PAGE_CONTACT = {
       icon: "send",
       text: "Contacta'm",
       value:
-        "Tens preguntes sobre el curs? Envia'm un missatge i et respondré en un termini de 24 hores.",
+        "Tens preguntes sobre el curs? Vols que t’implementi la teva pàgina web? Necessites ajuda puntual amb la teva web? Envia'm un missatge i et respondré en un termini de 24 hores.",
     },
     form: {
       username: "Nom",

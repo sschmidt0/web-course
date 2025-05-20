@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa6";
-import { FaClipboardList, FaHome } from "react-icons/fa";
+import { FaClipboardList, FaHome, FaHandsHelping } from "react-icons/fa";
 import {
   MdSchedule,
   MdLocationOn,
@@ -31,6 +31,7 @@ type IconType =
   | "done"
   | "github"
   | "group"
+  | "help"
   | "home"
   | "html"
   | "javascript"
@@ -56,6 +57,7 @@ export const APP_ICONS: Record<IconType, React.ReactNode> = {
   done: <BsFillPatchCheckFill />,
   github: <FaGithub />,
   group: <FaUserGroup />,
+  help: <FaHandsHelping />,
   home: <FaHome />,
   html: <MdOutlineHtml />,
   javascript: <MdOutlineJavascript />,

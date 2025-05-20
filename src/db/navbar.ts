@@ -13,12 +13,18 @@ export const NAVBAR_ITEMS = [
   },
   {
     id: 3,
+    icon: "services",
+    text: "Services",
+    route: "/services",
+  },
+  {
+    id: 4,
     icon: "person",
     text: "About",
     route: "/about",
   },
   {
-    id: 4,
+    id: 5,
     icon: "send",
     text: "Contact",
     route: "/contact",
@@ -49,9 +55,16 @@ export const SYLLABUS_ITEM = {
   spanish: "Programa",
 };
 
+export const SERVICES_ITEM = {
+  english: "Services",
+  catalan: "Serveis",
+  spanish: "Servicios",
+};
+
 export const NAV_TEXT = {
   about: ABOUT_ITEM,
   contact: CONTACT_ITEM,
   home: HOME_ITEM,
+  services: SERVICES_ITEM,
   syllabus: SYLLABUS_ITEM,
 };

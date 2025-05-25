@@ -19,6 +19,12 @@ export const useSendEmail = () => {
         language,
       }).toString();
 
+      if (!data.email || !data.message || !data.username || !language) {
+        console.error("Missing required fields");
+        setIsError(true);
+        return;
+      }
+
       const response = await fetch(`/api/send?${params}`, {
         method: "GET",
         headers: {

@@ -15,7 +15,7 @@ export default function RootLayout({
       <body>
         <div className={styles.root}>
           <HeaderContainer />
-          {children}
+          <div className={styles["children-container"]}>{children}</div>
         </div>
         <SpeedInsights />
         <Analytics />

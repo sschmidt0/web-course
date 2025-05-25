@@ -1,6 +1,10 @@
 .item-container {
-  display: flex;
-  gap: 32px;
+  max-width: 1200px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+  }
 }
 
 .header-container {
@@ -13,6 +17,11 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .cta-text {

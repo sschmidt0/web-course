@@ -18,7 +18,7 @@ export const InfoBoxList: React.FC<InfoBoxListProps> = ({
 }) => {
   return (
     <div className={className}>
-      <h2>{title}</h2>
+      <h2 className={styles.text}>{title}</h2>
       <div className={styles["item-container"]}>
         {items.map((item) => (
           <InfoBox

@@ -5,7 +5,6 @@
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-    padding: 0 16px;
   }
 }
 
@@ -31,6 +30,11 @@
   }
 }
 
+.title {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
 .author-text {
   max-width: 700px;
 }
@@ -38,24 +42,12 @@
 .items {
   width: 100%;
 
-  @media screen and (min-width: 664px) {
-    width: 42%;
-  }
-
-  @media screen and (min-width: 750px) {
-    width: 43%;
-  }
-
-  @media screen and (min-width: 864px) {
-    width: 44%;
+  @media screen and (min-width: 768px) {
+    max-width: 43%;
   }
 
   @media screen and (min-width: 1024px) {
-    width: 45%;
-  }
-
-  @media screen and (min-width: 1264px) {
-    width: 46%;
+    max-width: 45%;
   }
 }
 

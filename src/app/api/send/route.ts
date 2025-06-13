@@ -17,9 +17,9 @@ export async function GET(request: NextRequest) {
   const errorMessage = MESSAGES[language];
   const subject = EMAIL_MESSAGE[language]?.subject || "sarahschmidt.cat";
 
-  if (!message || !email || !username) {
-    return Response.json({ error: errorMessage?.error }, { status: 400 });
-  }
+  // if (!message || !email || !username) {
+  //   return Response.json({ error: errorMessage?.error }, { status: 400 });
+  // }
 
   try {
     const { data, error } = await resend.emails.send({

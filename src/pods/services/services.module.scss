@@ -26,7 +26,11 @@
 
 .cta-text {
   margin-top: 32px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--color-text);
+
+  @media screen and (min-width: 550px) {
+    font-size: 16px;
+  }
 }

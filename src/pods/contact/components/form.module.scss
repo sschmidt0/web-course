@@ -1,4 +1,4 @@
-@import "@/assets/scss/colours.scss";
+@use "@/assets/scss/colours.scss" as *;
 
 .container {
   display: flex;
@@ -26,6 +26,10 @@
   &:hover {
     color: $white;
     background-color: $secondary;
+  }
+
+  @media screen and (min-width: 550px) {
+    font-size: 16px;
   }
 }
 

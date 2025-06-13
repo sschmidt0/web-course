@@ -31,6 +31,36 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 28px;
   line-height: 1.1;
+
+  @media screen and (min-width: 550px) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.1;
+
+  @media screen and (min-width: 550px) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+
+  @media screen and (min-width: 550px) {
+    font-size: 18px;
+  }
+}
+
+p,
+li {
+  font-size: 14px;
+
+  @media screen and (min-width: 550px) {
+    font-size: 16px;
+  }
 }

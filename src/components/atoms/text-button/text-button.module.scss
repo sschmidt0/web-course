@@ -1,4 +1,4 @@
-@import "@/assets/scss/colours.scss";
+@use "@/assets/scss/colours.scss" as *;
 
 .button {
   padding: 8px 12px;
@@ -12,5 +12,9 @@
 
   &:hover {
     color: $primary;
+  }
+
+  @media screen and (min-width: 550px) {
+    font-size: 16px;
   }
 }

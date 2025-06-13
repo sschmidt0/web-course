@@ -13,7 +13,7 @@ export const NAVBAR_ITEMS = [
   },
   {
     id: 3,
-    icon: "services",
+    icon: "construction",
     text: "Services",
     route: "/services",
   },

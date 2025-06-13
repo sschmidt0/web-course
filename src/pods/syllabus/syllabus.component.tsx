@@ -6,14 +6,12 @@ import { PAGES_SYLLABUS } from "@/db/syllabus";
 import { useActiveSessionStore, useLanguageStore } from "@/store";
 import { Button, InfoBox, Title } from "@/components";
 import { IconListItemModel } from "@/common/model";
-import { isSmallScreen } from "@/common/helper";
 import styles from "./syllabus.module.scss";
 
 export const Syllabus: React.FC = () => {
   const router = useRouter();
   const { language } = useLanguageStore();
   const { setSessionIndex } = useActiveSessionStore();
-  const isMobile = isSmallScreen();
 
   const content = PAGES_SYLLABUS[language];
   const items = content.items as IconListItemModel[];
@@ -29,19 +27,15 @@ export const Syllabus: React.FC = () => {
     router.push(`/details/${newId}`);
   };
 
-  console.log({ isMobile });
-
   return (
     <>
       <div className={styles["header-container"]}>
         <Title text={content.title} />
-        {!isMobile && (
-          <Button
-            className={styles["fixed-button"]}
-            text={content.ctaButton}
-            onClick={handleCtaClick}
-          />
-        )}
+        <Button
+          className={styles["fixed-button"]}
+          text={content.ctaButton}
+          onClick={handleCtaClick}
+        />
       </div>
       <div className={styles["item-container"]}>
         {items.map((item) => {
@@ -54,13 +48,11 @@ export const Syllabus: React.FC = () => {
                   text={item.value}
                   title={item.text}
                 />
-                {isMobile && (
-                  <Button
-                    className={styles.button}
-                    text={content.ctaButton}
-                    onClick={handleCtaClick}
-                  />
-                )}
+                <Button
+                  className={styles.button}
+                  text={content.ctaButton}
+                  onClick={handleCtaClick}
+                />
               </React.Fragment>
             );
           }
@@ -81,13 +73,14 @@ export const Syllabus: React.FC = () => {
           );
         })}
       </div>
-      {isMobile && (
+
+      <div className={styles["floating-container"]}>
         <Button
           className={styles["floating-button"]}
           text={content.ctaButton}
           onClick={handleCtaClick}
         />
-      )}
+      </div>
     </>
   );
 };

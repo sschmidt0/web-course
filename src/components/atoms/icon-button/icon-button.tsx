@@ -21,7 +21,11 @@ export const IconButton: React.FC<IconButtonProps> = ({ icon, onClick }) => {
   const src = FLAGS[buttonIcon];
 
   return (
-    <button onClick={onClick} className={styles.button}>
+    <button
+      onClick={onClick}
+      className={styles.button}
+      aria-label={`icon button with icon ${icon}`}
+    >
       <div className={styles["image-container"]}>
         <Image
           className={styles.image}

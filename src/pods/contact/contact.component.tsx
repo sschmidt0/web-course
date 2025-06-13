@@ -4,7 +4,7 @@ import React from "react";
 import { useLanguageStore } from "../../store";
 import { PAGE_CONTACT } from "../../db/contact";
 import { FormModel, IconListItemModel } from "../../common/model";
-import { InfoBox } from "../../components";
+import { InfoBox, Title } from "../../components";
 import { Form } from "./components/form";
 import styles from "./contact.module.scss";
 
@@ -17,8 +17,9 @@ export const Contact: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <InfoBox title={info.text} text={info.value} icon={info.icon} />
-      <Form form={form} />
+      <Title text={info.text} />
+      <InfoBox text={info.value} icon={info.icon} />
+      <Form className={styles.form} form={form} />
     </div>
   );
 };

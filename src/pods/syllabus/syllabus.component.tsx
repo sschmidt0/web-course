@@ -29,11 +29,19 @@ export const Syllabus: React.FC = () => {
     router.push(`/details/${newId}`);
   };
 
+  console.log({ isMobile });
+
   return (
     <>
       <div className={styles["header-container"]}>
         <Title text={content.title} />
-        <Button text={content.ctaButton} onClick={handleCtaClick} />
+        {!isMobile && (
+          <Button
+            className={styles["fixed-button"]}
+            text={content.ctaButton}
+            onClick={handleCtaClick}
+          />
+        )}
       </div>
       <div className={styles["item-container"]}>
         {items.map((item) => {
@@ -73,6 +81,13 @@ export const Syllabus: React.FC = () => {
           );
         })}
       </div>
+      {isMobile && (
+        <Button
+          className={styles["floating-button"]}
+          text={content.ctaButton}
+          onClick={handleCtaClick}
+        />
+      )}
     </>
   );
 };

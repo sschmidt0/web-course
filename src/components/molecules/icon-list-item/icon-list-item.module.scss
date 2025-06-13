@@ -1,4 +1,4 @@
-@import "@/assets/scss/colours.scss";
+@use "@/assets/scss/colours.scss" as *;
 
 .container {
   display: flex;
@@ -19,12 +19,20 @@
 }
 
 .title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: $title-dark;
+
+  @media screen and (min-width: 550px) {
+    font-size: 16px;
+  }
 }
 
 .info {
   font-size: 14px;
   color: $tertiary;
+
+  @media screen and (min-width: 550px) {
+    font-size: 16px;
+  }
 }

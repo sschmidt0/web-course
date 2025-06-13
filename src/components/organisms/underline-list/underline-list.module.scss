@@ -1,4 +1,4 @@
-@import "@/assets/scss/colours.scss";
+@use "@/assets/scss/colours.scss" as *;
 
 .container {
   padding: 20px;

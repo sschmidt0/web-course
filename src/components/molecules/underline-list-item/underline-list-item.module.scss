@@ -1,4 +1,4 @@
-@import "@/assets/scss/colours.scss";
+@use "@/assets/scss/colours.scss" as *;
 
 .container {
   display: flex;
@@ -11,5 +11,9 @@
 .coloured-div {
   margin-top: -12px;
   color: $primary;
-  font-size: 0.7rem;
+  font-size: 12px;
+
+  @media screen and (min-width: 550px) {
+    font-size: 14px;
+  }
 }

@@ -12,9 +12,10 @@ import styles from "./form.module.scss";
 
 export interface FormProps {
   form: FormModel;
+  className?: string;
 }
 
-export const Form: React.FC<FormProps> = ({ form }) => {
+export const Form: React.FC<FormProps> = ({ form, className }) => {
   const { language } = useLanguageStore();
 
   const {
@@ -50,7 +51,10 @@ export const Form: React.FC<FormProps> = ({ form }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.container}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={[styles.container, className].join(" ")}
+    >
       <Input
         label={form.username}
         name="username"

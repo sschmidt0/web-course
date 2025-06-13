@@ -10,7 +10,7 @@ export interface InfoBoxProps {
   duration?: string;
   icon?: React.ReactNode;
   text: string;
-  title: string;
+  title?: string;
 }
 
 export const InfoBox: React.FC<InfoBoxProps> = ({
@@ -27,7 +27,7 @@ export const InfoBox: React.FC<InfoBoxProps> = ({
     <div className={cx(styles.container, className)}>
       {icon && <IconBox icon={itemIcon} />}
       {duration && <p className={styles.duration}>{duration}</p>}
-      <h3 className={styles.title}>{title}</h3>
+      {title && <h3 className={styles.title}>{title}</h3>}
       <p>{text}</p>
       <div className={styles["child-container"]}>{children}</div>
     </div>

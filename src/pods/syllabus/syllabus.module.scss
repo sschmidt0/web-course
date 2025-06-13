@@ -8,46 +8,56 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 24px;
 
   @media screen and (min-width: 555px) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0;
   }
 }
 
 .button {
-  display: none;
   width: 100%;
   margin-top: 32px;
+
+  @media screen and (min-width: 555px) {
+    display: none;
+  }
+}
+
+.fixed-button {
+  display: none;
+  width: fit-content;
 
   @media screen and (min-width: 555px) {
     display: block;
   }
 }
 
-.fixed-button {
-  width: fit-content;
-}
-
-.floating-button {
+.floating-container {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 0;
+  left: -16px;
+  right: -16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
   z-index: 100;
-  border-radius: 50px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  padding: 16px 32px;
-  font-size: 14px;
-  background: #634aff;
-  color: #fff;
-  border: none;
-  transition: background 0.2s;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
 
   @media (min-width: 555px) {
     display: none;
   }
+}
+
+.floating-button {
+  padding: 16px 32px;
+  font-size: 14px;
+  background: #634aff;
+  color: #fff;
+  width: 85%;
 }
 
 .floatingButton:hover {

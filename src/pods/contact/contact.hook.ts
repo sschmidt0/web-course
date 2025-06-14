@@ -26,7 +26,7 @@ export const useSendEmail = () => {
       }
 
       const response = await fetch(`/api/send?${params}`, {
-        method: "GET",
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },

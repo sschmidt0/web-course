@@ -7,7 +7,7 @@ import { EMAIL_MESSAGE } from "@/db/email";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
-export async function GET(request: NextRequest) {
+export async function POST(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const username = searchParams.get("username") as string;
   const email = decodeURIComponent(searchParams.get("email") as string);
@@ -17,9 +17,9 @@ export async function GET(request: NextRequest) {
   const errorMessage = MESSAGES[language];
   const subject = EMAIL_MESSAGE[language]?.subject || "sarahschmidt.cat";
 
-  // if (!message || !email || !username) {
-  //   return Response.json({ error: errorMessage?.error }, { status: 400 });
-  // }
+  if (!message || !email || !username) {
+    return Response.json({ error: errorMessage?.error }, { status: 400 });
+  }
 
   try {
     const { data, error } = await resend.emails.send({
@@ -34,7 +34,10 @@ export async function GET(request: NextRequest) {
       })) as React.ReactElement,
     });
 
+    console.log({ error });
+
     if (error) {
+      console.log({ error });
       return Response.json(
         { message: errorMessage?.error, error },
         { status: 400 }

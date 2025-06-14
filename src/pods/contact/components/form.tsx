@@ -39,14 +39,6 @@ export const Form: React.FC<FormProps> = ({ form, className }) => {
     } catch (error) {
       if (error) handleShowToast("error", errorMessage);
       console.log("Error sending email:", error);
-    } finally {
-      if (isSuccess) {
-        reset();
-        handleShowToast("success", successMessage);
-      }
-      if (isError) {
-        handleShowToast("error", errorMessage);
-      }
     }
   };
 

@@ -10,7 +10,7 @@ const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const username = searchParams.get("username") as string;
-  const email = searchParams.get("email") as string;
+  const email = decodeURIComponent(searchParams.get("email") as string);
   const message = searchParams.get("message") as string;
   const language = searchParams.get("language") as Language;
 

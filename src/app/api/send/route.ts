@@ -6,6 +6,7 @@ import { MESSAGES } from "@/db/messages";
 import { EMAIL_MESSAGE } from "@/db/email";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+console.log(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;

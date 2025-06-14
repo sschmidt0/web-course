@@ -44,9 +44,7 @@ const SendConfirmation: React.FC<Readonly<SendConfirmationProps>> = ({
           <Section style={{ paddingBottom: "20px" }}>
             <Row>
               <Text style={heading}>{title}</Text>
-              <Text style={link}>
-                www.sarahschmidt.cat | www.sarahschmidt.es
-              </Text>
+              <Text style={link}>www.sarahschmidt.cat</Text>
               <Text style={paragraph}>
                 {greeting} {username} 👋🏻
               </Text>
@@ -88,7 +86,7 @@ const container = {
 };
 
 const heading = {
-  fontSize: "32px",
+  fontSize: "24px",
   lineHeight: "1.3",
   fontWeight: "700",
   color: "#484848",
@@ -96,14 +94,14 @@ const heading = {
 
 const link = {
   paddingBottom: "24px",
-  fontSize: "18px",
+  fontSize: "14px",
   lineHeight: "1.3",
   fontWeight: "700",
   color: "#634aff",
 };
 
 const paragraph = {
-  fontSize: "18px",
+  fontSize: "14px",
   lineHeight: "1.4",
   color: "#484848",
 };
@@ -122,5 +120,5 @@ const hr = {
 
 const signature = {
   fontFamily: '"Comic Sans MS", "Comic Sans", cursive',
-  fontSize: "20px",
+  fontSize: "14px",
 };

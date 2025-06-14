@@ -24,7 +24,8 @@ export async function POST(request: NextRequest) {
   try {
     const { data, error } = await resend.emails.send({
       from: "Sarah Schmidt <contacte@sarahschmidt.cat>",
-      to: ["sakschmidt@gmail.com", email],
+      to: email,
+      cc: "sakschmidt@gmail.com",
       subject: subject,
       react: (await SendConfirmation({
         username,

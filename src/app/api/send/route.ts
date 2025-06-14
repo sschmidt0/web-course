@@ -34,10 +34,7 @@ export async function POST(request: NextRequest) {
       })) as React.ReactElement,
     });
 
-    console.log({ error });
-
     if (error) {
-      console.log({ error });
       return Response.json(
         { message: errorMessage?.error, error },
         { status: 400 }

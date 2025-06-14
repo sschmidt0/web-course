@@ -37,6 +37,8 @@ export const useSendEmail = () => {
         return;
       }
 
+      console.log({ response });
+
       if (response.ok) {
         setIsSuccess(true);
       }

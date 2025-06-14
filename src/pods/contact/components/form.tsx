@@ -50,6 +50,16 @@ export const Form: React.FC<FormProps> = ({ form, className }) => {
     }
   };
 
+  React.useEffect(() => {
+    if (isSuccess) {
+      reset();
+      handleShowToast("success", successMessage);
+    }
+    if (isError) {
+      handleShowToast("error", errorMessage);
+    }
+  }, [isSuccess, reset, isError, successMessage, errorMessage]);
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}

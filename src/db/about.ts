@@ -22,19 +22,22 @@ export const PAGE_ABOUT = {
           id: 1,
           icon: "code",
           text: "Frontend Technologies",
-          value: "HTML5, CSS3, JavaScript, React, TypeScript, NextJS, React Native",
+          value:
+            "HTML5, CSS3, JavaScript, React, TypeScript, NextJS, React Native",
         },
         {
           id: 2,
           icon: "ai",
           text: "AI & Machine Learning",
-          value: "Python, TensorFlow, Machine Learning fundamentals, Data Science (en proceso de aprendizaje)",
+          value:
+            "Python, TensorFlow, Machine Learning fundamentals, Data Science (en proceso de aprendizaje)",
         },
         {
           id: 3,
           icon: "school",
           text: "Educación",
-          value: "Profesora de idiomas en varias universidades durante muchos años (UB, UOC, ESCI UPF), cursos presenciales y online, título oficial de enseñanza (1. Staatsexamen)",
+          value:
+            "Profesora de idiomas en varias universidades durante muchos años (UB, UOC, ESCI UPF), cursos presenciales y online, título oficial de enseñanza (1. Staatsexamen)",
         },
       ],
     },
@@ -134,19 +137,22 @@ export const PAGE_ABOUT = {
           id: 1,
           icon: "code",
           text: "Frontend Technologies",
-          value: "HTML5, CSS3, JavaScript, React, TypeScript, NextJS, React Native",
+          value:
+            "HTML5, CSS3, JavaScript, React, TypeScript, NextJS, React Native",
         },
         {
           id: 2,
           icon: "ai",
           text: "AI & Machine Learning",
-          value: "Python, TensorFlow, Machine Learning fundamentals, Data Science (currently learning)",
+          value:
+            "Python, TensorFlow, Machine Learning fundamentals, Data Science (currently learning)",
         },
         {
           id: 3,
           icon: "school",
           text: "Education",
-          value: "Language teacher at several universities for many years (UB, UOC, ESCI UPF), face-to-face and online courses, official teaching degree (1. Staatsexamen)",
+          value:
+            "Language teacher at several universities for many years (UB, UOC, ESCI UPF), face-to-face and online courses, official teaching degree (1. Staatsexamen)",
         },
       ],
     },
@@ -246,19 +252,22 @@ export const PAGE_ABOUT = {
           id: 1,
           icon: "code",
           text: "Frontend Technologies",
-          value: "HTML5, CSS3, JavaScript, React, TypeScript, NextJS, React Native",
+          value:
+            "HTML5, CSS3, JavaScript, React, TypeScript, NextJS, React Native",
         },
         {
           id: 2,
           icon: "ai",
           text: "AI & Machine Learning",
-          value: "Python, TensorFlow, Machine Learning fonamentals, Data Science (en procés d'aprenentatge)",
+          value:
+            "Python, TensorFlow, Machine Learning fonamentals, Data Science (en procés d'aprenentatge)",
         },
         {
           id: 3,
           icon: "school",
           text: "Educació",
-          value: "Professora d'idiomes a diverses universitats durant molts anys (UB, UOC, ESCI UPF), cursos presencials i online, títol oficial d'ensenyament (1. Staatsexamen)",
+          value:
+            "Professora d'idiomes a diverses universitats durant molts anys (UB, UOC, ESCI UPF), cursos presencials i online, títol oficial d'ensenyament (1. Staatsexamen)",
         },
       ],
     },

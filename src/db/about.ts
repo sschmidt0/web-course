@@ -4,15 +4,23 @@ export const PAGE_ABOUT = {
     firstBlock: [
       {
         id: 1,
-        text: "¡Hola! 👋 Soy Sarah Schmidt, Frontend Developer con más de 3 años de experiencia en desarrollo web, actualmente en proceso de transición hacia AI Software Developer. Además, he trabajado durante más de 10 años como profesora de idiomas, incluyendo 6.5 años como profesora de alemán en la Universidad de Barcelona.",
+        text: "¡Hola! 👋 Soy Sarah Schmidt, Frontend Developer con más de 3 años de experiencia en desarrollo web, actualmente en transición hacia AI Software Developer.",
       },
       {
         id: 2,
-        text: "Tengo una licenciatura en Filología Hispánica e Inglesa, y también poseo un examen estatal para la enseñanza (1. Staatsexamen Lehramt Gymnasium/Gesamtschule). Mi pasión por la enseñanza y la tecnología me llevó a completar un máster en desarrollo web y estoy cursando un programa de AI Software Developer en IBM.",
+        text: "Antes de dedicarme al desarrollo, trabajé durante más de 10 años como profesora de idiomas, incluyendo 6,5 años como profesora de alemán en la Universidad de Barcelona. Tengo una licenciatura en Filología Hispánica e Inglesa y poseo el examen estatal alemán para la enseñanza.",
       },
       {
         id: 3,
-        text: "Gracias a mi sólida experiencia tanto en educación como en programación, soy capaz de ofrecer un enfoque de enseñanza claro y estructurado. Actualmente, estoy combinando mis habilidades de frontend con el mundo de la inteligencia artificial, explorando cómo la AI puede revolucionar el desarrollo de aplicaciones web.",
+        text: "Mi interés por la tecnología me llevó a completar un máster en desarrollo web y actualmente estoy cursando un programa de AI Software Developer en IBM.",
+      },
+      {
+        id: 4,
+        text: "Además, trabajé en M47 Labs como Data Modeler, donde participé en el entrenamiento de una asistente de voz ampliamente utilizada. Allí aprendí en profundidad los mecanismos del Machine Learning, trabajando con datos, modelos lingüísticos y procesos de mejora continua de sistemas de IA. Esta experiencia despertó aún más mi interés por la inteligencia artificial y reforzó mi decisión de especializarme en este campo.",
+      },
+      {
+        id: 5,
+        text: "Gracias a mi sólida experiencia tanto en educación como en programación, aporto un enfoque claro, estructurado y orientado a resultados. Actualmente, combino mis habilidades en frontend con el mundo de la inteligencia artificial, explorando cómo la IA puede transformar el desarrollo de aplicaciones web y la interacción entre personas y tecnología.",
       },
     ],
     secondBlock: {
@@ -28,9 +36,9 @@ export const PAGE_ABOUT = {
         {
           id: 2,
           icon: "ai",
-          text: "AI & Machine Learning",
+          text: "Agentic AI",
           value:
-            "Python, TensorFlow, Machine Learning fundamentals, Data Science (en proceso de aprendizaje)",
+            "Python, Machine Learning fundamentals, Agentic AI (en proceso de aprendizaje)",
         },
         {
           id: 3,
@@ -119,15 +127,23 @@ export const PAGE_ABOUT = {
     firstBlock: [
       {
         id: 1,
-        text: "Hello! 👋 I'm Sarah Schmidt, a Frontend Developer with over 3 years of experience in web development, currently transitioning towards becoming an AI Software Developer. Additionally, I have worked for over 10 years as a language teacher, including 6.5 years as a German teacher at the University of Barcelona.",
+        text: "Hi! 👋 I'm Sarah Schmidt, a Frontend Developer with over 3 years of experience in web development, currently transitioning into an AI Software Developer role.",
       },
       {
         id: 2,
-        text: "I have a degree in Spanish Philology and English Philology, and I also hold a state exam for teaching (1. Staatsexamen Lehramt Gymnasium/Gesamtschule). My passion for teaching and technology led me to complete a master's degree in web development and I'm currently enrolled in IBM's AI Software Developer program.",
+        text: "Before moving into tech, I worked for more than 10 years as a language teacher, including 6.5 years as a German lecturer at the University of Barcelona. I hold a degree in Hispanic and English Philology and have completed the German state teaching examination.",
       },
       {
         id: 3,
-        text: "Thanks to my solid experience in both education and programming, I am able to offer a clear and structured teaching approach. Currently, I'm combining my frontend skills with the world of artificial intelligence, exploring how AI can revolutionize web application development.",
+        text: "My interest in technology led me to complete a Master’s degree in Web Development, and I am currently enrolled in IBM’s AI Software Developer program.",
+      },
+      {
+        id: 4,
+        text: "In addition, I worked at M47 Labs as a Data Modeler, where I contributed to training a widely used voice assistant. During this time, I gained hands-on insight into Machine Learning mechanisms, working with data annotation, language models, and continuous improvement processes for AI systems. This experience further strengthened my interest in artificial intelligence and confirmed my decision to specialize in this field.",
+      },
+      {
+        id: 5,
+        text: "Thanks to my strong background in both education and programming, I bring a clear, structured, and results-oriented approach to my work. Today, I combine my frontend expertise with artificial intelligence, exploring how AI can transform web application development and human–technology interaction.",
       },
     ],
     secondBlock: {
@@ -143,9 +159,9 @@ export const PAGE_ABOUT = {
         {
           id: 2,
           icon: "ai",
-          text: "AI & Machine Learning",
+          text: "Agentic AI",
           value:
-            "Python, TensorFlow, Machine Learning fundamentals, Data Science (currently learning)",
+            "Python, Machine Learning fundamentals, Agentic AI (currently learning)",
         },
         {
           id: 3,
@@ -234,15 +250,23 @@ export const PAGE_ABOUT = {
     firstBlock: [
       {
         id: 1,
-        text: "Hola! 👋 Sóc la Sarah Schmidt, Frontend Developer amb més de 3 anys d'experiència en desenvolupament web, actualment en procés de transició cap a AI Software Developer. A més, he treballat durant més de 10 anys com a professora d'idiomes, inclosos 6,5 anys com a professora d'alemany a la Universitat de Barcelona.",
+        text: "Hola! 👋 Sóc la Sarah Schmidt, Frontend Developer amb més de 3 anys d’experiència en desenvolupament web, actualment en procés de transició cap a AI Software Developer.",
       },
       {
         id: 2,
-        text: "Tinc una llicenciatura en Filologia Hispànica i Anglesa, i també posseeixo un examen estatal per a l'ensenyament (1. Staatsexamen Lehramt Gymnasium/Gesamtschule). La meva passió per l'ensenyament i la tecnologia em va portar a completar un màster en desenvolupament web i estic cursant un programa d'AI Software Developer a IBM.",
+        text: "Abans de dedicar-me al sector tecnològic, vaig treballar durant més de 10 anys com a professora de llengües, incloent-hi 6,5 anys com a professora d’alemany a la Universitat de Barcelona. Tinc una llicenciatura en Filologia Hispànica i Anglesa, i disposo de l’examen estatal alemany per a l’ensenyament.",
       },
       {
         id: 3,
-        text: "Gràcies a la meva sòlida experiència tant en educació com en programació, sóc capaç d'oferir un enfocament d'ensenyament clar i estructurat. Actualment, estic combinant les meves habilitats de frontend amb el món de la intel·ligència artificial, explorant com l'AI pot revolucionar el desenvolupament d'aplicacions web.",
+        text: "El meu interès per la tecnologia em va portar a completar un màster en desenvolupament web, i actualment estic cursant el programa d’AI Software Developer d’IBM.",
+      },
+      {
+        id: 4,
+        text: "A més, vaig treballar a M47 Labs com a Data Modeler, on vaig participar en l’entrenament d’una assistent de veu àmpliament utilitzada. Durant aquesta etapa, vaig aprofundir en els mecanismes del Machine Learning, treballant amb anotació de dades, models lingüístics i processos de millora contínua de sistemes d’IA. Aquesta experiència va reforçar encara més el meu interès per la intel·ligència artificial i va consolidar la meva decisió d’especialitzar-me en aquest àmbit.",
+      },
+      {
+        id: 5,
+        text: "Gràcies a la meva sòlida experiència tant en educació com en programació, aporto un enfocament clar, estructurat i orientat a resultats. Actualment, combino les meves habilitats en frontend amb el món de la intel·ligència artificial, explorant com la IA pot transformar el desenvolupament d’aplicacions web i la interacció entre persones i tecnologia.",
       },
     ],
     secondBlock: {
@@ -258,9 +282,9 @@ export const PAGE_ABOUT = {
         {
           id: 2,
           icon: "ai",
-          text: "AI & Machine Learning",
+          text: "Agentic AI",
           value:
-            "Python, TensorFlow, Machine Learning fonamentals, Data Science (en procés d'aprenentatge)",
+            "Python, Machine Learning fonamentals, Agentic AI (en procés d'aprenentatge)",
         },
         {
           id: 3,

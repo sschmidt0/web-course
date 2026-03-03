@@ -5,8 +5,7 @@ import { Language } from "@/common/model/language";
 import { MESSAGES } from "@/db/messages";
 import { EMAIL_MESSAGE } from "@/db/email";
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
-console.log(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -18,8 +17,24 @@ export async function POST(request: NextRequest) {
   const errorMessage = MESSAGES[language];
   const subject = EMAIL_MESSAGE[language]?.subject || "sarahschmidt.cat";
 
-  if (!message || !email || !username) {
+  // Validación mejorada
+  if (!message || !email || !username || !language) {
+    console.error("Missing required fields:", {
+      hasMessage: !!message,
+      hasEmail: !!email,
+      hasUsername: !!username,
+      hasLanguage: !!language,
+    });
     return Response.json({ error: errorMessage?.error }, { status: 400 });
+  }
+
+  // Validar que la API key esté configurada
+  if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY environment variable is not set");
+    return Response.json(
+      { error: "Email service not configured" },
+      { status: 500 },
+    );
   }
 
   try {
@@ -37,20 +52,23 @@ export async function POST(request: NextRequest) {
     });
 
     if (error) {
+      console.error("Resend API error:", error);
       return Response.json(
         { message: errorMessage?.error, error },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
+    console.log("Email sent successfully to:", email);
     return Response.json(
       { message: errorMessage?.success, data },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
+    console.error("Unexpected error sending email:", error);
     return Response.json(
-      { message: errorMessage?.error, error },
-      { status: 500 }
+      { message: errorMessage?.error, error: "Internal server error" },
+      { status: 500 },
     );
   }
 }

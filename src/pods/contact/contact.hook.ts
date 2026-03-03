@@ -32,14 +32,15 @@ export const useSendEmail = () => {
         },
       });
 
-      if (response.status === 400 || response.status === 500) {
+      if (!response.ok) {
+        console.error(`Email send failed with status: ${response.status}`);
+        const errorData = await response.json().catch(() => ({}));
+        console.error("Error details:", errorData);
         setIsError(true);
         return;
       }
 
-      if (response.ok) {
-        setIsSuccess(true);
-      }
+      setIsSuccess(true);
     } catch (error) {
       console.log("Error sending email:", error);
       setIsError(true);

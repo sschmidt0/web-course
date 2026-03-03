@@ -17,14 +17,17 @@ import {
   MdOutlineConstruction,
   MdCloudUpload,
   MdSend,
+  MdArticle,
 } from "react-icons/md";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
-import { TbPigMoney, TbSeo } from "react-icons/tb";
+import { TbPigMoney, TbSeo, TbBrain } from "react-icons/tb";
 
 type IconType =
+  | "ai"
+  | "article"
   | "code"
   | "construction"
   | "css"
@@ -51,6 +54,8 @@ type IconType =
   | "upload";
 
 export const APP_ICONS: Record<IconType, React.ReactNode> = {
+  ai: <TbBrain />,
+  article: <MdArticle />,
   code: <FaCode />,
   construction: <MdOutlineConstruction />,
   css: <MdOutlineCss />,

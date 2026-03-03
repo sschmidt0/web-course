@@ -14,6 +14,15 @@ export const MenuList = () => {
   const { isOpen, setIsOpen } = useMenuStore();
   const pathname = usePathname();
 
+  // Mapeo correcto entre los textos de NAVBAR_ITEMS y las claves de NAV_TEXT
+  const textMapping: Record<string, keyof typeof NAV_TEXT> = {
+    Home: "home",
+    Blog: "blog",
+    "Web Course": "webCourse",
+    Services: "services",
+    Contact: "contact",
+  };
+
   const handleChangeOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -35,9 +44,9 @@ export const MenuList = () => {
       <ul className={styles.list}>
         {NAVBAR_ITEMS.map((item) => {
           const itemIcon = APP_ICONS[item.icon as keyof typeof APP_ICONS];
-          const navKey = item.text.toLowerCase() as keyof typeof NAV_TEXT;
+          const navKey = textMapping[item.text];
           const textObj = NAV_TEXT[navKey];
-          const itemText = textObj[language];
+          const itemText = textObj ? textObj[language] : item.text;
           const isActiveRoute = pathname === item.route;
 
           const handleClick = () => {

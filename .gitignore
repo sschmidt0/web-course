@@ -1,3 +1,18 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+build/
+dist/
+dist-ssr/
+out/
+.next/
+
+# Static exports
+out/
+
 # Logs
 logs
 *.log
@@ -7,26 +22,102 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and testing
+coverage/
+.nyc_output
+.coverage/
+*.lcov
+test-results/
+playwright-report/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 *.local
 
-.next
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.yarn/
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Cache directories
+.npm
+.cache/
+.temp/
+*.tsbuildinfo
+.eslintcache
+
+# Next.js
+.next/
 next-env.d.ts
-dist
+.swc/
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.DS_Store
+.DS_Store?
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.idea/
+*.swp
+*.swo
+*~
 
-coverage
-.env
-.env.local
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Runtime files
+*.tgz
+*.tar.gz
+
+# Temporary folders
+tmp/
+temp/
+
+# Storybook build outputs
+storybook-static
+
+# Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,4 +1,5 @@
 export * from "./box-list";
+export * from "./chatbot";
 export * from "./description-box";
 export * from "./icon-list";
 export * from "./info-box-list";

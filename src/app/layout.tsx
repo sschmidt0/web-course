@@ -2,6 +2,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { HeaderContainer } from "@/pods/header";
+import { Chatbot } from "@/components";
 import styles from "./layout.module.scss";
 import "./global.styles.scss";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
           <HeaderContainer />
           <div className={styles["children-container"]}>{children}</div>
         </div>
+        <Chatbot />
         <SpeedInsights />
         <Analytics />
         <GoogleAnalytics

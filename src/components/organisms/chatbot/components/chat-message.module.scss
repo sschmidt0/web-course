@@ -1,0 +1,111 @@
+@import "../../../../assets/scss/colours.scss";
+
+.messageWrapper {
+  display: flex;
+  width: 100%;
+
+  &.userMessage {
+    justify-content: flex-end;
+  }
+
+  &.botMessage {
+    justify-content: flex-start;
+  }
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  max-width: 80%;
+  animation: fadeIn 0.3s ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.messageContent {
+  background: $white;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .messageText {
+    margin: 0;
+    line-height: 1.4;
+    color: $title-dark;
+    font-size: 0.875rem;
+    word-wrap: break-word;
+  }
+
+  .timestamp {
+    font-size: 0.75rem;
+    color: $secondary;
+    margin-top: 0.25rem;
+    display: block;
+  }
+}
+
+.userMessage .messageContent {
+  background: linear-gradient(135deg, $primary, $secondary);
+  color: $white;
+
+  .messageText {
+    color: $white;
+  }
+
+  .timestamp {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left-color: $primary;
+    border-bottom: none;
+    border-right: none;
+  }
+}
+
+.botMessage .messageContent {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: $white;
+    border-bottom: none;
+    border-left: none;
+  }
+}
+
+.botIcon,
+.userIcon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.userIcon {
+  color: $primary;
+}
+
+.botIcon {
+  color: $secondary;
+}

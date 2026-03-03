@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { IntroContainer } from "@/pods/intro";
+import { AboutContainer } from "@/pods/about";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
-  title: "sarahschmidt.es",
+  title: "Sarah Schmidt - Frontend & AI Developer",
   description:
-    "Aprende a crear tu propia página web desde cero con HTML, CSS y JavaScript. Curso práctico para principiantes con sesiones presenciales en Barcelona. Impartido por una experta en desarrollo web y enseñanza. ¡Inscríbete ahora!",
+    "Frontend Developer con más de 3 años de experiencia, actualmente en transición hacia AI Software Developer. Especializada en React, TypeScript y tecnologías web modernas. Cursando programa de IBM en Inteligencia Artificial.",
 };
 
-export default function IntroPage() {
-  return <IntroContainer />;
+export default function HomePage() {
+  return <AboutContainer />;
 }

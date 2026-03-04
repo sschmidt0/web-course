@@ -92,7 +92,7 @@ export const PAGE_ABOUT = {
         {
           id: 1,
           text: "AI Software Developer Program en IBM",
-          years: "2024 - presente",
+          years: "2026 - presente",
         },
         {
           id: 2,
@@ -215,7 +215,7 @@ export const PAGE_ABOUT = {
         {
           id: 1,
           text: "AI Software Developer Program at IBM",
-          years: "2024 - present",
+          years: "2026 - present",
         },
         {
           id: 2,
@@ -363,7 +363,7 @@ export const PAGE_ABOUT = {
         {
           id: 6,
           text: "Filologia Anglesa i Espanyola a la Universitat de Duisburg-Essen (Alemanya)",
-          years: "2004 - 2008",
+          years: "2006 - 2008",
         },
       ],
     },

@@ -4,7 +4,7 @@ export const PAGE_ABOUT = {
     firstBlock: [
       {
         id: 1,
-        text: "¡Hola! 👋 Soy Sarah Schmidt, Frontend Developer con más de 3 años de experiencia en desarrollo web, actualmente en transición hacia AI Software Developer.",
+        text: "¡Hola! 👋 Soy Sarah Schmidt, Frontend Developer con más de 4 años de experiencia en desarrollo web, actualmente en transición hacia AI Software Developer.",
       },
       {
         id: 2,
@@ -127,7 +127,7 @@ export const PAGE_ABOUT = {
     firstBlock: [
       {
         id: 1,
-        text: "Hi! 👋 I'm Sarah Schmidt, a Frontend Developer with over 3 years of experience in web development, currently transitioning into an AI Software Developer role.",
+        text: "Hi! 👋 I'm Sarah Schmidt, a Frontend Developer with over 4 years of experience in web development, currently transitioning into an AI Software Developer role.",
       },
       {
         id: 2,
@@ -250,7 +250,7 @@ export const PAGE_ABOUT = {
     firstBlock: [
       {
         id: 1,
-        text: "Hola! 👋 Sóc la Sarah Schmidt, Frontend Developer amb més de 3 anys d’experiència en desenvolupament web, actualment en procés de transició cap a AI Software Developer.",
+        text: "Hola! 👋 Sóc la Sarah Schmidt, Frontend Developer amb més de 4 anys d’experiència en desenvolupament web, actualment en procés de transició cap a AI Software Developer.",
       },
       {
         id: 2,

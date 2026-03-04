@@ -1,7 +1,7 @@
 export const EMAIL_MESSAGE = {
   english: {
     subject: "No reply: Your message has been delivered",
-    title: "Web Development Course",
+    title: "sarahschmidt.cat",
     greeting: "Hello",
     thanksText:
       "Thank you for contacting me. I have received your message and will get back to you as soon as possible.",
@@ -11,7 +11,7 @@ export const EMAIL_MESSAGE = {
   },
   spanish: {
     subject: "No responder: Tu mensaje ha sido entregado",
-    title: "Curso de Desarrollo Web",
+    title: "sarahschmidt.es",
     greeting: "Hola",
     thanksText:
       "Gracias por ponerte en contacto conmigo. He recibido tu mensaje y te responderé lo antes posible.",
@@ -21,7 +21,7 @@ export const EMAIL_MESSAGE = {
   },
   catalan: {
     subject: "No responguis: El teu missatge ha estat entregat",
-    title: "Curs de Desenvolupament Web",
+    title: "sarahschmidt.es",
     greeting: "Hola",
     thanksText:
       "Gràcies per posar-te en contacte amb mi. He rebut el teu missatge i et respondré tan aviat com sigui possible.",
